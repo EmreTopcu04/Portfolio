@@ -14,7 +14,12 @@
       <div class="lower-part">
         <div class="resume">
           <img src="../src/assets/icons/folder_icon.svg" alt="folder" class="folder-image" />
-          <a href="../src/assets/Emre Topcu.pdf" download class="resume-link">Resume</a>
+          <a
+            href="https://drive.google.com/file/d/1uPhhoLNuT6JuwegK9EwsMGAuoeoDY8ZO/view?usp=sharing"
+            target="_blank"
+            class="resume-link"
+            >Resume</a
+          >
         </div>
         <div class="links">
           <div class="links">
