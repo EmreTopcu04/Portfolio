@@ -183,5 +183,75 @@ export default {
       font-size: 0.9rem;
     }
   }
+
+  @media (max-height: 768px) {
+    padding: 1rem;
+
+    .upper-section {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .image-wrapper {
+        .image {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      .right-section {
+        .title-section {
+          flex-direction: column;
+          align-items: flex-start;
+          .title {
+            font-size: 1rem;
+          }
+          .company {
+            font-size: 0.9rem;
+          }
+        }
+        .location {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    .description {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-height: 480px) {
+    padding: 0.5rem;
+
+    .upper-section {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .image-wrapper {
+        .image {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      .right-section {
+        .title-section {
+          flex-direction: column;
+          align-items: flex-start;
+          .title {
+            font-size: 0.9rem;
+          }
+          .company {
+            font-size: 0.8rem;
+          }
+        }
+        .location {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .description {
+      font-size: 0.8rem;
+    }
+  }
 }
 </style>

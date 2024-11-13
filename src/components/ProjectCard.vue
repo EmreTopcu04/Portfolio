@@ -197,5 +197,71 @@ export default {
       }
     }
   }
+  @media (max-height: 768px) {
+    flex-direction: column;
+    padding: 1rem;
+
+    .left-side {
+      .image-wrapper {
+        .image {
+          width: 80%;
+          height: auto;
+        }
+      }
+    }
+
+    .right-side {
+      .title-description-wrapper {
+        h3 {
+          font-size: 1.2rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+      .link {
+        .github-icon {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+        .link-text {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  @media (max-height: 480px) {
+    flex-direction: column;
+    padding: 1rem;
+
+    .left-side {
+      .image-wrapper {
+        .image {
+          width: 60%;
+          height: auto;
+        }
+      }
+    }
+
+    .right-side {
+      .title-description-wrapper {
+        h3 {
+          font-size: 1.2rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+      .link {
+        .github-icon {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+        .link-text {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
 }
 </style>
