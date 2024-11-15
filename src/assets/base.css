@@ -23,7 +23,7 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: linear-gradient(55deg, var(--color-background) 20%, var(--color-background-mute) 80%);
+  background: var(--color-background);
   line-height: 1.6;
   font-family:
     Inter,
