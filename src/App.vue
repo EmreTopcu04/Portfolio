@@ -244,7 +244,6 @@ export default {
       flex-direction: column;
       align-items: start;
       padding: 3rem 3rem;
-      width: 30%;
       height: 100%;
       .image {
         width: 150px;
@@ -287,7 +286,7 @@ export default {
           gap: 10%;
           text-decoration: none;
           color: #f1f1f1;
-          font-size: 100%;
+          font-size: 80%;
           padding: 0.2rem 0.4rem;
           border: 1px solid #f1f1f1;
           border-radius: 5px;
@@ -743,7 +742,6 @@ export default {
   }
   @media (max-height: 768px) {
     .scroll-wrapper {
-      padding: 1rem;
       width: 100%;
       height: 100%;
       .left-side {
