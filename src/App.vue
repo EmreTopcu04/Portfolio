@@ -389,21 +389,18 @@ export default {
       .skills-wrapper {
         display: flex;
         flex-direction: column;
-        margin-top: 2rem;
         h1 {
           font-size: 2rem;
           font-weight: bold;
           color: #f1f1f1;
         }
         .languages-wrapper {
-          margin-top: 1rem;
           h2 {
             font-size: 1.2rem;
             font-weight: bold;
             color: #f1f1f1;
           }
           .languages {
-            padding-top: 1rem;
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
@@ -430,7 +427,6 @@ export default {
             color: #f1f1f1;
           }
           .frameworks {
-            padding-top: 1rem;
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
@@ -457,7 +453,6 @@ export default {
             color: #f1f1f1;
           }
           .databases {
-            padding-top: 1rem;
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
@@ -484,7 +479,6 @@ export default {
             color: #f1f1f1;
           }
           .practises {
-            padding-top: 1rem;
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
@@ -745,7 +739,7 @@ export default {
       width: 100%;
       height: 100%;
       .left-side {
-        padding: 1rem;
+        padding: 0rem 3rem;
         width: 100%;
 
         .image {
@@ -754,40 +748,40 @@ export default {
         }
         .name {
           margin-top: 0.6rem;
-          font-size: 1.2rem;
+          font-size: 1.5rem; /* Increased font size */
         }
         .occupation {
-          font-size: 0.8rem;
+          font-size: 1rem; /* Increased font size */
         }
         .location {
           margin-top: 0.3rem;
-          font-size: 0.8rem;
+          font-size: 1rem; /* Increased font size */
         }
         .brief-text {
           margin-top: 0.6rem;
-          font-size: 0.6rem;
+          font-size: 0.8rem; /* Increased font size */
         }
         .work-together-section {
           margin-top: 0.8rem;
           .work-together-text {
-            font-size: 0.8rem;
+            font-size: 1rem; /* Increased font size */
           }
           .work-together-button {
-            font-size: 0.6rem;
+            font-size: 0.8rem; /* Increased font size */
           }
         }
         .lower-part {
           margin-top: 0.8rem;
           .resume {
             .resume-link {
-              font-size: 0.8rem;
+              font-size: 1rem; /* Increased font size */
             }
           }
           .links {
             .link {
               .icon {
-                width: 20px;
-                height: 20px;
+                width: 25px; /* Increased icon size */
+                height: 25px; /* Increased icon size */
               }
             }
           }
@@ -796,64 +790,66 @@ export default {
 
       .right-side {
         width: 100%;
+        padding: 0rem 3rem;
+
         .about-me-wrapper {
           h1 {
-            font-size: 1.2rem;
+            font-size: 1.5rem; /* Increased font size */
           }
           .paragraph-wrapper {
             p {
-              font-size: 0.8rem;
+              font-size: 1rem; /* Increased font size */
             }
           }
         }
         .skills-wrapper {
           h1 {
-            font-size: 1.2rem;
+            font-size: 1.5rem; /* Increased font size */
           }
           .languages-wrapper {
             h2 {
-              font-size: 0.8rem;
+              font-size: 1rem; /* Increased font size */
             }
             .languages {
               .skill-wrapper {
                 .skill {
-                  font-size: 0.6rem;
+                  font-size: 0.8rem; /* Increased font size */
                 }
               }
             }
           }
           .frameworks-wrapper {
             h2 {
-              font-size: 0.8rem;
+              font-size: 1rem; /* Increased font size */
             }
             .frameworks {
               .skill-wrapper {
                 .skill {
-                  font-size: 0.6rem;
+                  font-size: 0.8rem; /* Increased font size */
                 }
               }
             }
           }
           .databases-wrapper {
             h2 {
-              font-size: 0.8rem;
+              font-size: 1rem; /* Increased font size */
             }
             .databases {
               .skill-wrapper {
                 .skill {
-                  font-size: 0.6rem;
+                  font-size: 0.8rem; /* Increased font size */
                 }
               }
             }
           }
           .practises-wrapper {
             h2 {
-              font-size: 0.8rem;
+              font-size: 1rem; /* Increased font size */
             }
             .practises {
               .skill-wrapper {
                 .skill {
-                  font-size: 0.6rem;
+                  font-size: 0.8rem; /* Increased font size */
                 }
               }
             }
@@ -861,17 +857,17 @@ export default {
         }
         .experience-wrapper {
           h1 {
-            font-size: 1.2rem;
+            font-size: 1.5rem; /* Increased font size */
           }
         }
         .education-wrapper {
           h1 {
-            font-size: 1.2rem;
+            font-size: 1.5rem; /* Increased font size */
           }
         }
         .project-wrapper {
           h1 {
-            font-size: 1.2rem;
+            font-size: 1.5rem; /* Increased font size */
           }
         }
       }
