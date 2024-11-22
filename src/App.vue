@@ -191,8 +191,23 @@ export default {
           image: 'chess_bot',
           title: 'Chess Bot',
           description:
-            'Chess bot that plays in the terminal where it detects the best 3 moves and moves the pieces randomly. The PDF file about this script will be available in this repository.',
+            'Chess Bot is a terminal-based chess program that detects the best 3 moves and moves the pieces randomly.Simple and easy-to-use terminal interface',
           link: 'https://github.com/EmreTopcu04/Chess_Bot',
+        },
+
+        {
+          image: 'aibot',
+          title: 'AI Powered Trading Bot',
+          description:
+            'This project is an AI-powered trading bot that uses machine learning algorithms to predict stock prices and make profitable trades. The bot is designed to be user-friendly and easy to use, with a simple interface that allows users to input their trading preferences and receive real-time trading recommendations.',
+          link: 'https://github.com/EmreTopcu04/AI_Powered_Trading_Bot',
+        },
+        {
+          image: 'solstice',
+          title: 'Solstice',
+          description:
+            'This project prioritizes a user-centric interface and reliable tracking features to empower individuals in managing their training and health activities.',
+          link: 'https://github.com/akdenizcse/cse-234-term-project-cse-234-project_12',
         },
         {
           image: 'assembly',
@@ -202,18 +217,11 @@ export default {
           link: 'https://github.com/EmreTopcu04/Assembly_Projects',
         },
         {
-          image: 'recipe',
-          title: 'Recipe Website',
+          image: 'godot',
+          title: '3D Squash Survival Game in Godot',
           description:
-            'Basic recipe book page made with CSS, JavaScript, and HTML for user interface design studies.',
-          link: 'https://github.com/EmreTopcu04/Recipe-Book-App',
-        },
-        {
-          image: 'subscription',
-          title: 'Email Subscription Website',
-          description:
-            'Basic email subscription page made with CSS, JavaScript, and HTML for user interface design studies.',
-          link: 'https://github.com/EmreTopcu04/Email-Subscription-Page',
+            'In this thrilling 3D game, built and customized using the Godot Engine, players must jump and squash mobs to survive. Inspired by a classic concept but modified for a unique challenge, the game pits players against relentless enemies in a battle for survival. Precision and timing are key as players navigate the 3D environment, avoiding being hit by mobs—because one strike means game over!',
+          link: 'https://github.com/EmreTopcu04/Godot3DSquash-The-Creeps',
         },
       ],
     }
@@ -286,7 +294,7 @@ export default {
           gap: 10%;
           text-decoration: none;
           color: #f1f1f1;
-          font-size: 80%;
+          font-size: 100%;
           padding: 0.2rem 0.4rem;
           border: 1px solid #f1f1f1;
           border-radius: 5px;
@@ -734,7 +742,7 @@ export default {
       }
     }
   }
-  @media (max-height: 768px) {
+  @media (max-height: 480px) {
     .scroll-wrapper {
       width: 100%;
       height: 100%;
@@ -773,6 +781,7 @@ export default {
         .lower-part {
           margin-top: 0.8rem;
           .resume {
+            padding: 0;
             .resume-link {
               font-size: 1rem; /* Increased font size */
             }

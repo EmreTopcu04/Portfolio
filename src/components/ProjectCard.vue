@@ -4,14 +4,17 @@
       <div v-if="image == 'chess_bot'" class="image-wrapper">
         <img src="../assets/icons/chess.png" alt="project image" class="image" />
       </div>
+      <div v-else-if="image == 'aibot'" class="image-wrapper">
+        <img src="../assets/icons/aibot.png" alt="project image" class="image" />
+      </div>
       <div v-else-if="image == 'assembly'" class="image-wrapper">
         <img src="../assets/icons/assembly.png" alt="project image" class="image" />
       </div>
-      <div v-else-if="image == 'recipe'" class="image-wrapper">
-        <img src="../assets/icons/recipe-app.png" alt="project image" class="image" />
+      <div v-else-if="image == 'solstice'" class="image-wrapper">
+        <img src="../assets/icons/solstice.png" alt="project image" class="image" />
       </div>
-      <div v-else-if="image == 'subscription'" class="image-wrapper">
-        <img src="../assets/icons/email.png" alt="project image" class="image" />
+      <div v-else-if="image == 'godot'" class="image-wrapper">
+        <img src="../assets/icons/godot.png" alt="project image" class="image" />
       </div>
     </div>
     <div class="right-side">
@@ -54,25 +57,24 @@ export default {
   border-left: 5px solid #f9a826;
   border-radius: 5px;
   padding: 1rem 2rem;
-  gap: 2rem;
+  gap: 3rem;
   margin: 2rem 0;
   .left-side {
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     .image-wrapper {
-      width: 100%;
-      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       .image {
         width: 100%;
-        height: 100%;
+        height: auto; /* Maintain aspect ratio */
+        max-width: 300px; /* Set a maximum width */
+        max-height: 300px; /* Set a maximum height */
         border-radius: 20px;
-        object-fit: cover;
       }
     }
   }
@@ -197,39 +199,7 @@ export default {
       }
     }
   }
-  @media (max-height: 768px) {
-    flex-direction: column;
-    padding: 1rem;
 
-    .left-side {
-      .image-wrapper {
-        .image {
-          width: 80%;
-          height: auto;
-        }
-      }
-    }
-
-    .right-side {
-      .title-description-wrapper {
-        h3 {
-          font-size: 1.2rem;
-        }
-        p {
-          font-size: 0.9rem;
-        }
-      }
-      .link {
-        .github-icon {
-          width: 1.5rem;
-          height: 1.5rem;
-        }
-        .link-text {
-          font-size: 0.9rem;
-        }
-      }
-    }
-  }
   @media (max-height: 480px) {
     flex-direction: column;
     padding: 1rem;
