@@ -1,6 +1,17 @@
 <template>
   <div class="app-c">
-    <div class="scroll-wrapper">
+    <div class="opening-wrapper" v-if="!isOpen">
+      <div class="opening-text">
+        <h1>Listen to your customers, not your competitors.</h1>
+        <h3>- Joel Spolsky</h3>
+        <h2>Would you like to find out more about me?</h2>
+
+        <div class="button-wrapper">
+          <button @click="isOpen = true" class="button">Explore</button>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-wrapper" v-else>
       <div class="left-side">
         <div class="image">
           <img src="../src/assets/photo.jpeg" alt="profile" class="image" />
@@ -15,15 +26,17 @@
           <div class="work-together-text">Let's Work Together</div>
         </div>
         <div class="lower-part">
-          <div class="resume">
-            <img src="../src/assets/icons/folder_icon.svg" alt="folder" class="folder-image" />
-            <a
-              href="https://drive.google.com/file/d/1dGNVsC6R08RiJlk8kJNA079frqcIoZPy/view?usp=sharing"
-              target="_blank"
-              class="resume-link"
-              >Resume</a
-            >
-          </div>
+          <a
+            href="https://drive.google.com/file/d/1dGNVsC6R08RiJlk8kJNA079frqcIoZPy/view?usp=sharing"
+            target="_blank"
+            class="resume-link"
+          >
+            <div class="resume">
+              <img src="../src/assets/icons/folder_icon.svg" alt="folder" class="folder-image" />
+              <div class="resume-text">Resume</div>
+            </div>
+          </a>
+
           <div class="links">
             <div class="links">
               <a href="https://github.com/EmreTopcu04" target="_blank" class="link">
@@ -152,6 +165,7 @@ export default {
   },
   data() {
     return {
+      isOpen: false,
       languages: ['Java', 'Kotlin', 'JavaScript', 'TypeScript', 'Python', 'Assembly', 'C', 'C++'],
       frameworks: ['ReactJS', 'Vue.js', 'SpaCy', 'Pandas', 'Numpy', 'Scikit-Learn', 'NLTK'],
       databases: ['SQL', 'Elasticsearch'],
@@ -236,6 +250,99 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  position: relative;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .opening-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(270deg, #0d0d0d, #1a1a1a, #0d0d0d);
+    background-size: 600% 600%;
+    animation: gradientAnimation 5s ease infinite;
+    overflow: hidden;
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .opening-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #f1f1f1;
+
+      h1 {
+        font-size: 3.5rem;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        margin: 1rem 0 0;
+      }
+
+      .button-wrapper {
+        margin-top: 2rem;
+
+        .button {
+          padding: 0.7rem 2.5rem;
+          border: 2px solid #f1f1f1;
+          border-radius: 5px;
+          color: #f1f1f1;
+          font-size: 1.1rem;
+          font-family: 'Roboto', sans-serif;
+          background: transparent;
+          font-weight: bold;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-color: #f1f1f1;
+            color: #0d0d0d;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(100);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   .scroll-wrapper {
     display: flex;
@@ -253,6 +360,8 @@ export default {
       align-items: start;
       padding: 3rem 3rem;
       height: 100%;
+      animation: fadeIn 1s;
+
       .image {
         width: 150px;
         height: 150px;
@@ -285,40 +394,34 @@ export default {
         gap: 1rem;
         width: 100%;
         margin-top: 1.5rem;
-
-        .resume {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          gap: 10%;
+        .resume-link {
           text-decoration: none;
-          color: #f1f1f1;
-          font-size: 100%;
-          padding: 0.2rem 0.4rem;
-          border: 1px solid #f1f1f1;
-          border-radius: 5px;
-          background-color: transparent;
-          transition: all 0.3s;
-
-          &:hover {
-            background-color: #f1f1f1;
-            color: #000;
-            cursor: pointer;
-            .folder-image {
-              filter: invert(100%);
-            }
-            .resume-link {
-              color: #000;
-            }
-          }
-          .folder-image {
-            width: 15%;
-            height: 15%;
-          }
-          .resume-link {
-            text-decoration: none;
+          .resume {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
             color: #f1f1f1;
+            font-size: 100%;
+            padding: 0.2rem 0.4rem;
+            border: 1px solid #f1f1f1;
+            border-radius: 5px;
+            background-color: transparent;
+            transition: all 0.3s;
+
+            &:hover {
+              background-color: #f1f1f1;
+              color: #000;
+              cursor: pointer;
+              .folder-image {
+                filter: invert(100%);
+              }
+            }
+            .folder-image {
+              width: 15%;
+              height: 15%;
+            }
           }
         }
         .links {
@@ -378,6 +481,8 @@ export default {
       padding: 3rem 3rem;
       -ms-overflow-style: none;
       scrollbar-width: none;
+      animation: fadeIn 1s;
+
       .about-me-wrapper {
         h1 {
           font-size: 2rem;
@@ -539,6 +644,22 @@ export default {
   @media (max-width: 768px) {
     flex-direction: column;
     height: max-content;
+    .opening-wrapper {
+      .opening-text {
+        h1 {
+          font-size: 2.5rem;
+        }
+        h2 {
+          font-size: 1.3rem;
+        }
+        .button-wrapper {
+          .button {
+            font-size: 1rem;
+            padding: 0.6rem 2rem;
+          }
+        }
+      }
+    }
     .scroll-wrapper {
       flex-direction: column;
       justify-content: start;
@@ -642,6 +763,23 @@ export default {
   @media (max-width: 480px) {
     flex-direction: column;
     height: max-content;
+    .opening-wrapper {
+      .opening-text {
+        height: 100vh;
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1rem;
+        }
+        .button-wrapper {
+          .button {
+            font-size: 0.9rem;
+            padding: 0.5rem 1.8rem;
+          }
+        }
+      }
+    }
     .scroll-wrapper {
       flex-direction: column;
       justify-content: start;
@@ -756,26 +894,26 @@ export default {
         }
         .name {
           margin-top: 0.6rem;
-          font-size: 1.5rem; /* Increased font size */
+          font-size: 1.5rem;
         }
         .occupation {
-          font-size: 1rem; /* Increased font size */
+          font-size: 1rem;
         }
         .location {
           margin-top: 0.3rem;
-          font-size: 1rem; /* Increased font size */
+          font-size: 1rem;
         }
         .brief-text {
           margin-top: 0.6rem;
-          font-size: 0.8rem; /* Increased font size */
+          font-size: 0.8rem;
         }
         .work-together-section {
           margin-top: 0.8rem;
           .work-together-text {
-            font-size: 1rem; /* Increased font size */
+            font-size: 1rem;
           }
           .work-together-button {
-            font-size: 0.8rem; /* Increased font size */
+            font-size: 0.8rem;
           }
         }
         .lower-part {
@@ -783,14 +921,14 @@ export default {
           .resume {
             padding: 0;
             .resume-link {
-              font-size: 1rem; /* Increased font size */
+              font-size: 1rem;
             }
           }
           .links {
             .link {
               .icon {
-                width: 25px; /* Increased icon size */
-                height: 25px; /* Increased icon size */
+                width: 25px;
+                height: 25px;
               }
             }
           }
@@ -803,62 +941,62 @@ export default {
 
         .about-me-wrapper {
           h1 {
-            font-size: 1.5rem; /* Increased font size */
+            font-size: 1.5rem;
           }
           .paragraph-wrapper {
             p {
-              font-size: 1rem; /* Increased font size */
+              font-size: 1rem;
             }
           }
         }
         .skills-wrapper {
           h1 {
-            font-size: 1.5rem; /* Increased font size */
+            font-size: 1.5rem;
           }
           .languages-wrapper {
             h2 {
-              font-size: 1rem; /* Increased font size */
+              font-size: 1rem;
             }
             .languages {
               .skill-wrapper {
                 .skill {
-                  font-size: 0.8rem; /* Increased font size */
+                  font-size: 0.8rem;
                 }
               }
             }
           }
           .frameworks-wrapper {
             h2 {
-              font-size: 1rem; /* Increased font size */
+              font-size: 1rem;
             }
             .frameworks {
               .skill-wrapper {
                 .skill {
-                  font-size: 0.8rem; /* Increased font size */
+                  font-size: 0.8rem;
                 }
               }
             }
           }
           .databases-wrapper {
             h2 {
-              font-size: 1rem; /* Increased font size */
+              font-size: 1rem;
             }
             .databases {
               .skill-wrapper {
                 .skill {
-                  font-size: 0.8rem; /* Increased font size */
+                  font-size: 0.8rem;
                 }
               }
             }
           }
           .practises-wrapper {
             h2 {
-              font-size: 1rem; /* Increased font size */
+              font-size: 1rem;
             }
             .practises {
               .skill-wrapper {
                 .skill {
-                  font-size: 0.8rem; /* Increased font size */
+                  font-size: 0.8rem;
                 }
               }
             }
@@ -866,17 +1004,17 @@ export default {
         }
         .experience-wrapper {
           h1 {
-            font-size: 1.5rem; /* Increased font size */
+            font-size: 1.5rem;
           }
         }
         .education-wrapper {
           h1 {
-            font-size: 1.5rem; /* Increased font size */
+            font-size: 1.5rem;
           }
         }
         .project-wrapper {
           h1 {
-            font-size: 1.5rem; /* Increased font size */
+            font-size: 1.5rem;
           }
         }
       }
