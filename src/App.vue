@@ -18,17 +18,17 @@
             src="../src/assets/icons/tr.png"
             alt="turkey"
             class="flag"
-            @click="isEnglish = false"
+            @click="changeLanguage(false)"
           />
           <img
             src="../src/assets/icons/uk.png"
             alt="united-kingdom"
             class="flag"
-            @click="isEnglish = true"
+            @click="changeLanguage(true)"
           />
         </div>
       </div>
-      <transition name="fade">
+      <transition name="fade" mode="out-in">
         <div class="scroll-wrapper" :key="isEnglish">
           <div class="left-side">
             <div class="image">
@@ -86,7 +86,7 @@
               </div>
             </div>
           </div>
-          <div class="right-side">
+          <div class="right-side" ref="rightSide">
             <div class="about-me-wrapper" v-if="isEnglish">
               <h1>About Me</h1>
               <div class="paragraph-wrapper">
@@ -299,7 +299,18 @@ export default {
       isOpen: false,
       isEnglish: true,
       data: data,
+      rightSideScrollPosition: 0,
     }
+  },
+  methods: {
+    changeLanguage(isEnglish) {
+      this.$nextTick(() => {
+        if (this.$refs.rightSide) {
+          this.rightSideScrollPosition = this.$refs.rightSide.scrollTop
+        }
+        this.isEnglish = isEnglish
+      })
+    },
   },
 }
 </script>
