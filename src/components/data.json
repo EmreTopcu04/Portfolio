@@ -1,0 +1,144 @@
+{
+  "languages": {
+    "en": ["Java", "Kotlin", "JavaScript", "TypeScript", "Python", "Assembly", "C", "C++"],
+    "tr": ["Java", "Kotlin", "JavaScript", "TypeScript", "Python", "Assembly", "C", "C++"]
+  },
+  "frameworks": {
+    "en": ["ReactJS", "Vue.js", "SpaCy", "Pandas", "Numpy", "Scikit-Learn", "NLTK"],
+    "tr": ["ReactJS", "Vue.js", "SpaCy", "Pandas", "Numpy", "Scikit-Learn", "NLTK"]
+  },
+  "databases": {
+    "en": ["SQL", "Elasticsearch"],
+    "tr": ["SQL", "Elasticsearch"]
+  },
+  "practises": {
+    "en": ["Git", "Agile", "Design Patterns", "Test-driven development", "Virtualization"],
+    "tr": ["Git", "Agile", "Tasarım Kalıpları", "Test odaklı geliştirme", "Sanalizasyon"]
+  },
+  "experiences": {
+    "en": [
+      {
+        "image": "gts",
+        "title": "Intern",
+        "location": "Antalya, Turkey",
+        "time": "July 2024 - August 2024 · 2 Months",
+        "description": "Worked as a frontend developer intern at GTS, I developed various components using the Vue.js framework.",
+        "company": "GTS Global Travel Services"
+      },
+      {
+        "image": "tusaş",
+        "title": "Candidate Engineer",
+        "location": "Antalya, Turkey",
+        "time": "November 2024 - Ongoing",
+        "description": "Working as a candidate engineer at Turkish Aerospace Industries, I'm responsible for developing and maintaining the company's internal software.",
+        "company": "Turkish Aerospace Industries"
+      }
+    ],
+    "tr": [
+      {
+        "image": "gts",
+        "title": "Stajyer",
+        "location": "Antalya, Türkiye",
+        "time": "Temmuz 2024 - Ağustos 2024 · 2 Ay",
+        "description": "GTS'de stajyer olarak frontend developer pozisyonunda çalıştım, Vue.js framework kullanarak çeşitli bileşenler geliştirdim.",
+        "company": "GTS Global Travel Services"
+      },
+      {
+        "image": "tusaş",
+        "title": "Aday Mühendis",
+        "location": "Antalya, Türkiye",
+        "time": "Kasım 2024 - Devam Ediyor",
+        "description": "Türk Havacılık ve Uzay Sanayii'nde aday mühendis olarak çalışıyorum, şirketin iç yazılımlarını geliştirmek ve bakımını yapmakla sorumluyum.",
+        "company": "Türk Havacılık ve Uzay Sanayii"
+      }
+    ]
+  },
+  "educations": {
+    "en": [
+      {
+        "image": "akdeniz",
+        "title": "Bachelor of Computer Science and Engineering",
+        "location": "Antalya, Turkey",
+        "time": "September 2022 - Ongoing",
+        "description": "Currently studying Computer Science Engineering at Akdeniz University.",
+        "company": "Akdeniz University"
+      }
+    ],
+    "tr": [
+      {
+        "image": "akdeniz",
+        "title": "Bilgisayar Mühendisliği",
+        "location": "Antalya, Türkiye",
+        "time": "Eylül 2022 - Devam Ediyor",
+        "description": "Akdeniz Üniversitesi Bilgisayar Mühendisliği bölümünde okuyorum.",
+        "company": "Akdeniz Üniversitesi"
+      }
+    ]
+  },
+  "projects": {
+    "en": [
+      {
+        "image": "chess_bot",
+        "title": "Chess Bot",
+        "description": "Chess Bot is a GUI-based chess program that detects the best 3 moves and moves the pieces randomly. Prepared for an academic paper.",
+        "link": "https://github.com/EmreTopcu04/Chess_Bot"
+      },
+      {
+        "image": "aibot",
+        "title": "AI Powered Trading Bot",
+        "description": "This project is an AI-powered trading bot that uses machine learning algorithms to predict stock prices and make profitable trades. The bot is designed to be user-friendly and easy to use, with a simple interface that allows users to input their trading preferences and receive real-time trading recommendations.",
+        "link": "https://github.com/EmreTopcu04/AI_Powered_Trading_Bot"
+      },
+      {
+        "image": "solstice",
+        "title": "Solstice",
+        "description": "This project prioritizes a user-centric interface and reliable tracking features to empower individuals in managing their training and health activities.",
+        "link": "https://github.com/akdenizcse/cse-234-term-project-cse-234-project_12"
+      },
+      {
+        "image": "assembly",
+        "title": "Assembly Projects",
+        "description": "This repository contains various assembly language projects developed as part of my coursework. The projects cover a wide range of topics, from basic arithmetic operations to more complex algorithms, all implemented in assembly language to interact directly with hardware and demonstrate low-level programming skills.",
+        "link": "https://github.com/EmreTopcu04/Assembly_Projects"
+      },
+      {
+        "image": "godot",
+        "title": "3D Squash Survival Game in Godot",
+        "description": "In this thrilling 3D game, built and customized using the Godot Engine, players must jump and squash mobs to survive. Inspired by a classic concept but modified for a unique challenge, the game pits players against relentless enemies in a battle for survival. Precision and timing are key as players navigate the 3D environment, avoiding being hit by mobs—because one strike means game over!",
+        "link": "https://github.com/EmreTopcu04/Godot3DSquash-The-Creeps"
+      }
+    ],
+    "tr": [
+      {
+        "image": "chess_bot",
+        "title": "Satranç Botu",
+        "description": "Satranç Botu, en iyi 3 hamleyi algılayan ve taşları rastgele hareket ettiren basit bir arayüze sahip satranç programıdır. Akademik makale için hazırlanmıştır.",
+        "link": "https://github.com/EmreTopcu04/Chess_Bot"
+      },
+      {
+        "image": "aibot",
+        "title": "AI Destekli Trading Bot",
+        "description": "Bu proje, kripto fiyatlarını tahmin etmek ve karlı işlemler yapmak için makine öğrenme algoritmalarını kullanan bir AI destekli trading botudur. Bot, kullanıcı dostu ve kullanımı kolay olacak şekilde tasarlanmıştır, basit bir arayüzle kullanıcıların ticaret tercihlerini girmelerine ve gerçek zamanlı ticaret önerileri almasına olanak tanır.",
+        "link": "https://github.com/EmreTopcu04/AI_Powered_Trading_Bot"
+      },
+      {
+        "image": "solstice",
+        "title": "Solstice",
+        "description": "Bu proje, kullanıcı merkezli bir arayüz ve güvenilir izleme özelliklerini önceliklendirerek bireyleri eğitim ve sağlık faaliyetlerini yönetmelerinde güçlendirmeyi amaçlamaktadır.",
+        "link": "https://github.com/akdenizcse/cse-234-term-project-cse-234-project_12"
+      },
+      {
+        "image": "assembly",
+        "title": "Assembly Projeleri",
+        "description": "Bu repository, derslerimin bir parçası olarak geliştirilen çeşitli assembly dil projelerini içerir. Projeler, temel aritmetik işlemlerden daha karmaşık algoritmalara kadar geniş bir konu yelpazesini kapsar ve tümü, donanımla doğrudan etkileşim kurmak ve düşük seviyeli programlama becerilerini göstermek için assembly dilinde uygulanmıştır.",
+        "link": "https://github.com/EmreTopcu04/Assembly_Projects"
+      },
+      {
+        "image": "godot",
+        "title": "3D Squash Survival Game in Godot",
+        "description": "Godot Engine kullanılarak inşa edilen ve özelleştirilen bu heyecan verici 3D oyunda, hayatta kalmak için zıplamalı ve düşmanları ezmelisiniz. Klasik bir konseptten ilham alan ancak benzersiz bir zorluk için değiştirilen oyun, oyuncuları hayatta kalma mücadelesinde acımasız düşmanlara karşı koyuyor. Oyuncuların 3D ortamda gezinirken düşmanlara çarpmaktan kaçınması kritiktir, çünkü tek bir darbe oyunu bitirir!",
+        "link": "https://github.com/EmreTopcu04/Godot3DSquash-The-Creeps"
+      }
+    ]
+  }
+}
