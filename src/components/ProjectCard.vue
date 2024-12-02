@@ -108,6 +108,7 @@ export default {
       gap: 0.5rem;
       padding-top: 1rem;
       text-decoration: none;
+      width: fit-content;
       .github-icon {
         display: flex;
         align-items: center;
