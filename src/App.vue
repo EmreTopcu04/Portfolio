@@ -18,12 +18,14 @@
             src="../src/assets/icons/tr.png"
             alt="turkey"
             class="flag"
+            :class="{ active: !isEnglish }"
             @click="changeLanguage(false)"
           />
           <img
             src="../src/assets/icons/uk.png"
             alt="united-kingdom"
             class="flag"
+            :class="{ active: isEnglish }"
             @click="changeLanguage(true)"
           />
         </div>
@@ -431,11 +433,21 @@ export default {
         .flag {
           width: 30px;
           height: 30px;
-          border: #f1f1f1 1px solid;
+          border: #d4d4d4 1px solid;
           border-radius: 50%;
-          transition: all 0.3s;
+          transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+
+          &.active {
+            border: #d4d4d4 2px solid;
+            box-shadow: 0 0 10px rgba(218, 218, 218, 0.5);
+            transform: scale(1.1);
+          }
+
           &:hover {
             cursor: pointer;
+            opacity: 0.8;
           }
         }
       }
