@@ -100,12 +100,6 @@
         "title": "Assembly Projects",
         "description": "This repository contains various assembly language projects developed as part of my coursework. The projects cover a wide range of topics, from basic arithmetic operations to more complex algorithms, all implemented in assembly language to interact directly with hardware and demonstrate low-level programming skills.",
         "link": "https://github.com/EmreTopcu04/Assembly_Projects"
-      },
-      {
-        "image": "godot",
-        "title": "3D Squash Survival Game in Godot",
-        "description": "In this thrilling 3D game, built and customized using the Godot Engine, players must jump and squash mobs to survive. Inspired by a classic concept but modified for a unique challenge, the game pits players against relentless enemies in a battle for survival. Precision and timing are key as players navigate the 3D environment, avoiding being hit by mobs—because one strike means game over!",
-        "link": "https://github.com/EmreTopcu04/Godot3DSquash-The-Creeps"
       }
     ],
     "tr": [
@@ -132,12 +126,6 @@
         "title": "Assembly Projeleri",
         "description": "Bu repository, derslerimin bir parçası olarak geliştirilen çeşitli assembly dil projelerini içerir. Projeler, temel aritmetik işlemlerden daha karmaşık algoritmalara kadar geniş bir konu yelpazesini kapsar ve tümü, donanımla doğrudan etkileşim kurmak ve düşük seviyeli programlama becerilerini göstermek için assembly dilinde uygulanmıştır.",
         "link": "https://github.com/EmreTopcu04/Assembly_Projects"
-      },
-      {
-        "image": "godot",
-        "title": "3D Squash Survival Game in Godot",
-        "description": "Godot Engine kullanılarak inşa edilen ve özelleştirilen bu heyecan verici 3D oyunda, hayatta kalmak için zıplamalı ve düşmanları ezmelisiniz. Klasik bir konseptten ilham alan ancak benzersiz bir zorluk için değiştirilen oyun, oyuncuları hayatta kalma mücadelesinde acımasız düşmanlara karşı koyuyor. Oyuncuların 3D ortamda gezinirken düşmanlara çarpmaktan kaçınması kritiktir, çünkü tek bir darbe oyunu bitirir!",
-        "link": "https://github.com/EmreTopcu04/Godot3DSquash-The-Creeps"
       }
     ]
   }
