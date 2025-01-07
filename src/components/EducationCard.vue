@@ -26,7 +26,11 @@
         </div>
       </div>
     </div>
-    <div class="description" @click="isCoursesVisible = !isCoursesVisible">
+    <div
+      class="description"
+      @click="isCoursesVisible = !isCoursesVisible"
+      :class="{ clicked: isCoursesVisible }"
+    >
       <div class="description-text" v-if="isEnglish">Click to see more</div>
       <div class="description-text" v-else>Daha fazlası için tıkla</div>
 
@@ -196,7 +200,7 @@ export default {
       }
     }
 
-    &:hover {
+    &.clicked {
       background-color: #f1f1f1;
       color: #000;
       cursor: pointer;
