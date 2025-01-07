@@ -111,14 +111,14 @@
               <h1>Hakkımda</h1>
               <div class="paragraph-wrapper">
                 <p>
-                  Akdeniz Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. 20 yaşındayım. Yeni
-                  teknolojileri öğrenmeye, bunun yanı sıra etkileyici projeler geliştirmeye çalışan
+                  Akdeniz Üniversitesi Bilgisayar Mühendisliği bölümünde okuyan 20 yaşında bir
+                  öğrenciyim. Yeni teknolojileri öğrenmeye ve etkili projeler geliştirmeye meraklı
                   birisiyim.
                 </p>
                 <p>
-                  Hem front-end geliştirme hem de makine öğrenimi alanlarında önemli deneyimler
-                  edindim. Bu da bana, teknolojideki yenilikleri daha iyi anlamama ve öğrenme arzumu
-                  güçlendirmeme yaradı.
+                  Hem ön uç geliştirme hem de makine öğrenimi konusunda önemli deneyimler kazandım;
+                  bu da son teknolojiler hakkındaki bilgilerimi genişletmemi sağladı ve bunun yanı
+                  sıra aynı zamanda sürekli öğrenme isteğimi pekiştirdi.
                 </p>
                 <p>
                   Sürekli olarak kendimi geliştirme fırsatları arıyorum ve teknoloji dünyasına
