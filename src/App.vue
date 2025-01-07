@@ -232,28 +232,34 @@
             </div>
             <div class="education-wrapper" v-if="isEnglish">
               <h1>Education</h1>
-              <JobCard
+              <EducationCard
                 v-for="education in data.educations.en"
                 :key="education.title"
                 :image="education.image"
                 :title="education.title"
                 :location="education.location"
                 :time="education.time"
-                :description="education.description"
-                :company="education.company"
+                :school="education.school"
+                :gpa="education.gpa"
+                :class_name="education.class"
+                :years="education.years"
+                :isEnglish="true"
               />
             </div>
             <div class="education-wrapper" v-else>
               <h1>Eğitim</h1>
-              <JobCard
+              <EducationCard
                 v-for="education in data.educations.tr"
                 :key="education.title"
                 :image="education.image"
                 :title="education.title"
                 :location="education.location"
                 :time="education.time"
-                :description="education.description"
-                :company="education.company"
+                :school="education.school"
+                :gpa="education.gpa"
+                :class_name="education.class"
+                :years="education.years"
+                :isEnglish="false"
               />
             </div>
             <div class="project-wrapper" v-if="isEnglish">
@@ -286,6 +292,7 @@
 </template>
 
 <script>
+import EducationCard from './components/EducationCard.vue'
 import JobCard from './components/JobCard.vue'
 import ProjectCard from './components/ProjectCard.vue'
 import data from './components/data.json'
@@ -295,6 +302,7 @@ export default {
   components: {
     ProjectCard,
     JobCard,
+    EducationCard,
   },
   data() {
     return {

@@ -148,8 +148,6 @@ export default {
   }
 
   @media (max-width: 480px) {
-    padding: 0.5rem;
-
     padding: 1rem;
 
     .upper-section {

@@ -56,22 +56,328 @@
   "educations": {
     "en": [
       {
+        "school": "Akdeniz University",
         "image": "akdeniz",
         "title": "Bachelor of Computer Science and Engineering",
         "location": "Antalya, Turkey",
         "time": "September 2022 - Ongoing",
-        "description": "Currently studying Computer Science Engineering at Akdeniz University.",
-        "company": "Akdeniz University"
+        "gpa": "3.89/4.00",
+        "class": "3rd Grade",
+        "years": [
+          {
+            "name": "1st Semester",
+            "courses": [
+              {
+                "name": "CSE 101 Computer Programming I",
+                "grade": "BA"
+              },
+              {
+                "name": "CSE 105 Introduction to Computer Science",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 111 Physics I",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 181 Natural Sciences",
+                "grade": "BA"
+              },
+              {
+                "name": "CSE 183 English Writing Skills",
+                "grade": "BA"
+              },
+              {
+                "name": "MAT 163 Mathematics I",
+                "grade": "BA"
+              },
+              {
+                "name": "TDB 101 Turkish Language I",
+                "grade": "AA"
+              }
+            ]
+          },
+          {
+            "name": "2nd Semester",
+            "courses": [
+              {
+                "name": "CSE 102 Computer Programming II",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 112 Physics II",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 122 Statistics for Engineering",
+                "grade": "BA"
+              },
+
+              {
+                "name": "CSE 184 English Presentation Skills",
+                "grade": "AA"
+              },
+              {
+                "name": "KPD 102 Career Planning and Development",
+                "grade": "AA"
+              },
+              {
+                "name": "MAT 164 Mathematics II",
+                "grade": "AA"
+              },
+              {
+                "name": "TDB 102 Turkish Language II",
+                "grade": "AA"
+              }
+            ]
+          },
+          {
+            "name": "3rd Semester",
+            "courses": [
+              {
+                "name": "ATA 101 Atatürk's Principles and History of Turkish Revolution I",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 201 Data Structures",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 211 Digital Design",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 213 Microcontroller Programming",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 221 Discrete Mathematics I",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 281 Principles of User Interface Design",
+                "grade": "AA"
+              }
+            ]
+          },
+          {
+            "name": "4th Semester",
+            "courses": [
+              {
+                "name": "ATA 102 Atatürk's Principles and History of Turkish Revolution II",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 204 Database Management Systems",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 206 Computer Organization",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 222 Discrete Mathematics II",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 234 Mobile Programming",
+                "grade": "BA"
+              },
+              {
+                "name": "MAT 222 Linear Algebra",
+                "grade": "AA"
+              }
+            ]
+          },
+          {
+            "name": "5th Semester",
+            "courses": [
+              {
+                "name": "CSE 301 Algorithms",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 303 Fundamentals of Operating Systems",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 321 Statistical Inference and Computation",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 351 Design Patterns",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 409 Introduction to Natural Language Processing",
+                "grade": "AA"
+              }
+            ]
+          }
+        ]
       }
     ],
     "tr": [
       {
+        "school": "Akdeniz Üniversitesi",
         "image": "akdeniz",
-        "title": "Bilgisayar Mühendisliği",
+        "title": "Bilgisayar Mühendisliği (İngilizce)",
         "location": "Antalya, Türkiye",
         "time": "Eylül 2022 - Devam Ediyor",
-        "description": "Akdeniz Üniversitesi Bilgisayar Mühendisliği bölümünde okuyorum.",
-        "company": "Akdeniz Üniversitesi"
+        "gpa": "3.89/4.00",
+        "class": "3. Sınıf",
+        "years": [
+          {
+            "name": "1. Dönem",
+            "courses": [
+              {
+                "name": "CSE 101 Computer Programming I",
+                "grade": "BA"
+              },
+              {
+                "name": "CSE 105 Introduction to Computer Science",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 111 Physics I",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 181 Natural Sciences",
+                "grade": "BA"
+              },
+              {
+                "name": "CSE 183 English Writing Skills",
+                "grade": "BA"
+              },
+              {
+                "name": "MAT 163 Mathematics I",
+                "grade": "BA"
+              },
+              {
+                "name": "TDB 101 Turkish Language I",
+                "grade": "AA"
+              }
+            ]
+          },
+          {
+            "name": "2. Dönem",
+            "courses": [
+              {
+                "name": "CSE 102 Computer Programming II",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 112 Physics II",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 122 Statistics for Engineering",
+                "grade": "BA"
+              },
+
+              {
+                "name": "CSE 184 English Presentation Skills",
+                "grade": "AA"
+              },
+              {
+                "name": "KPD 102 Career Planning and Development",
+                "grade": "AA"
+              },
+              {
+                "name": "MAT 164 Mathematics II",
+                "grade": "AA"
+              },
+              {
+                "name": "TDB 102 Turkish Language II",
+                "grade": "AA"
+              }
+            ]
+          },
+          {
+            "name": "3. Dönem",
+            "courses": [
+              {
+                "name": "ATA 101 Atatürk's Principles and History of Turkish Revolution I",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 201 Data Structures",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 211 Digital Design",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 213 Microcontroller Programming",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 221 Discrete Mathematics I",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 281 Principles of User Interface Design",
+                "grade": "AA"
+              }
+            ]
+          },
+          {
+            "name": "4. Dönem",
+            "courses": [
+              {
+                "name": "ATA 102 Atatürk's Principles and History of Turkish Revolution II",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 204 Database Management Systems",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 206 Computer Organization",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 222 Discrete Mathematics II",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 234 Mobile Programming",
+                "grade": "BA"
+              },
+              {
+                "name": "MAT 222 Linear Algebra",
+                "grade": "AA"
+              }
+            ]
+          },
+          {
+            "name": "5. Dönem",
+            "courses": [
+              {
+                "name": "CSE 301 Algorithms",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 303 Fundamentals of Operating Systems",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 321 Statistical Inference and Computation",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 351 Design Patterns",
+                "grade": "AA"
+              },
+              {
+                "name": "CSE 409 Introduction to Natural Language Processing",
+                "grade": "AA"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
