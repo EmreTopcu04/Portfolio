@@ -45,7 +45,6 @@
         <div class="year-wrapper">{{ currentSemesterName }}</div>
         <div class="courses-wrapper" v-for="course in currentSemesterCourses" :key="course.name">
           <li class="course-name">{{ course.name }}</li>
-          <div class="grade">{{ course.grade }}</div>
         </div>
       </div>
       <div class="buttons-wrapper">
@@ -183,7 +182,6 @@ export default {
     background-color: transparent;
     transition: all 0.3s;
     cursor: pointer;
-
     .description-text {
       display: flex;
       align-items: center;
@@ -195,18 +193,14 @@ export default {
       height: 15px;
       filter: invert(100);
       transition: transform 0.3s ease;
+      transform: rotate(90deg);
       &.rotated {
         transform: rotate(180deg);
       }
     }
 
     &.clicked {
-      background-color: #f1f1f1;
-      color: #000;
       cursor: pointer;
-      img {
-        filter: invert(0);
-      }
     }
   }
   .years {
