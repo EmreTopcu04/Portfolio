@@ -1,17 +1,6 @@
 <template>
   <div class="app-c">
-    <div class="opening-wrapper" v-if="!isOpen">
-      <div class="opening-text">
-        <h1>Listen to your customers, not your competitors.</h1>
-        <h3>- Joel Spolsky</h3>
-        <h2>Would you like to find out more about me?</h2>
-
-        <div class="button-wrapper">
-          <button @click="isOpen = true" class="button">Explore</button>
-        </div>
-      </div>
-    </div>
-    <div class="content-wrapper" v-else>
+    <div class="content-wrapper">
       <div class="flags">
         <div class="flags-wrapper">
           <img
@@ -306,7 +295,6 @@ export default {
   },
   data() {
     return {
-      isOpen: false,
       isEnglish: true,
       data: data,
       rightSideScrollPosition: 0,
@@ -340,78 +328,6 @@ export default {
   .fade-enter,
   .fade-leave-to {
     opacity: 0;
-  }
-
-  .opening-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(270deg, #0d0d0d, #1a1a1a, #0d0d0d);
-    background-size: 600% 600%;
-    animation: gradientAnimation 5s ease infinite;
-    overflow: hidden;
-
-    @keyframes gradientAnimation {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    .opening-text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #f1f1f1;
-
-      h1 {
-        font-size: 3.5rem;
-        font-family: 'Playfair Display', serif;
-        font-weight: 700;
-        line-height: 1.2;
-        text-transform: uppercase;
-        margin: 0;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-        font-family: 'Playfair Display', serif;
-        font-weight: 400;
-        margin: 1rem 0 0;
-      }
-
-      .button-wrapper {
-        margin-top: 2rem;
-
-        .button {
-          padding: 0.7rem 2.5rem;
-          border: 2px solid #f1f1f1;
-          border-radius: 5px;
-          color: #f1f1f1;
-          font-size: 1.1rem;
-          font-family: 'Roboto', sans-serif;
-          background: transparent;
-          font-weight: bold;
-          transition: all 0.3s ease-in-out;
-
-          &:hover {
-            background-color: #f1f1f1;
-            color: #0d0d0d;
-            cursor: pointer;
-          }
-        }
-      }
-    }
   }
 
   @keyframes fadeIn {
@@ -761,22 +677,7 @@ export default {
   @media (max-width: 768px) {
     flex-direction: column;
     height: max-content;
-    .opening-wrapper {
-      .opening-text {
-        h1 {
-          font-size: 2.5rem;
-        }
-        h2 {
-          font-size: 1.3rem;
-        }
-        .button-wrapper {
-          .button {
-            font-size: 1rem;
-            padding: 0.6rem 2rem;
-          }
-        }
-      }
-    }
+
     .content-wrapper {
       .scroll-wrapper {
         flex-direction: column;
@@ -882,23 +783,7 @@ export default {
   @media (max-width: 480px) {
     flex-direction: column;
     height: max-content;
-    .opening-wrapper {
-      .opening-text {
-        height: 100vh;
-        h1 {
-          font-size: 2rem;
-        }
-        h2 {
-          font-size: 1rem;
-        }
-        .button-wrapper {
-          .button {
-            font-size: 0.9rem;
-            padding: 0.5rem 1.8rem;
-          }
-        }
-      }
-    }
+
     .content-wrapper {
       .scroll-wrapper {
         flex-direction: column;

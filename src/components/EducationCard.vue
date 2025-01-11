@@ -171,13 +171,13 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    width: 22%;
+    justify-content: start;
+    width: fit-content;
     gap: 1rem;
     margin: 2rem 0;
     color: #f1f1f1;
     padding: 0.2rem 0.4rem;
-    border: 1px solid #f1f1f1;
+    border-bottom: 3px solid #f1f1f1;
     border-radius: 5px;
     background-color: transparent;
     transition: all 0.3s;
@@ -282,7 +282,6 @@ export default {
     }
     .description {
       font-size: 0.9rem;
-      width: 100%;
     }
     .years {
       .years-wrapper {
@@ -340,7 +339,6 @@ export default {
     }
     .description {
       font-size: 0.9rem;
-      width: 100%;
     }
     .years {
       .years-wrapper {
@@ -398,7 +396,7 @@ export default {
     }
     .description {
       font-size: 0.8rem;
-      width: 100%; /* Make the description section responsive */
+      width: 100%;
     }
     .years {
       .years-wrapper {
