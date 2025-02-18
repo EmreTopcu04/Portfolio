@@ -381,7 +381,7 @@ export default {
       width: 100%;
       height: 100%;
       overflow: hidden;
-      padding: 3rem 3rem;
+      padding: 1rem;
       gap: 2rem;
       justify-content: center;
       align-items: center;
@@ -390,7 +390,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: start;
-        padding: 3rem 3rem;
+        padding: 2rem 2rem;
         height: 100%;
         animation: fadeIn 1s;
 
@@ -510,7 +510,7 @@ export default {
         width: 75%;
         height: 100%;
         overflow-y: scroll;
-        padding: 3rem 3rem;
+        padding: 2rem 2rem;
         -ms-overflow-style: none;
         scrollbar-width: none;
         animation: fadeIn 1s;

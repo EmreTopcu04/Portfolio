@@ -4,8 +4,8 @@
     "tr": ["Java", "Kotlin", "JavaScript", "TypeScript", "Python", "Assembly", "C", "C++"]
   },
   "frameworks": {
-    "en": ["ReactJS", "Vue.js", "SpaCy", "Pandas", "Numpy", "Scikit-Learn", "NLTK"],
-    "tr": ["ReactJS", "Vue.js", "SpaCy", "Pandas", "Numpy", "Scikit-Learn", "NLTK"]
+    "en": ["ReactJS", "Vue.js", "SpaCy", "Pandas", "Numpy", "Scikit-Learn", "NLTK", "Transformers"],
+    "tr": ["ReactJS", "Vue.js", "SpaCy", "Pandas", "Numpy", "Scikit-Learn", "NLTK", "Transformers"]
   },
   "databases": {
     "en": ["SQL", "Elasticsearch"],

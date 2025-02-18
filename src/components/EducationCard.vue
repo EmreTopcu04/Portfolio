@@ -109,7 +109,7 @@ export default {
   width: 100%;
   border-left: 5px solid #f9a826;
   border-radius: 5px;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
   margin: 2rem 0;
   .upper-section {
     display: flex;
@@ -177,7 +177,6 @@ export default {
     margin: 2rem 0;
     color: #f1f1f1;
     padding: 0.2rem 0.4rem;
-    border-bottom: 3px solid #f1f1f1;
     border-radius: 5px;
     background-color: transparent;
     transition: all 0.3s;
@@ -251,8 +250,6 @@ export default {
   }
 
   @media (max-width: 768px) {
-    padding: 1rem;
-
     .upper-section {
       flex-direction: column;
       align-items: flex-start;
@@ -308,8 +305,6 @@ export default {
   }
 
   @media (max-width: 480px) {
-    padding: 1rem;
-
     .upper-section {
       flex-direction: column;
       align-items: flex-start;
