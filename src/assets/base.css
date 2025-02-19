@@ -29,7 +29,7 @@
     --color-text: rgba(40, 40, 40, 0.8);
     --color-text-invert: rgba(255, 255, 255, 0.9);
 
-    --image: invert(70%);
+    --image: invert(50%);
     --image-invert: invert(10%);
   }
 }
