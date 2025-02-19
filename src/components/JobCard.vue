@@ -59,7 +59,7 @@ export default {
 .job-card {
   height: 100%;
   width: 100%;
-  border-left: 5px solid #f9a826;
+  border-left: 5px solid var(--color-border);
   border-radius: 5px;
   padding: 1rem 2rem;
   margin: 2rem 0;

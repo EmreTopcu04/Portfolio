@@ -1,22 +1,30 @@
 <template>
   <div class="app-c">
     <div class="content-wrapper">
-      <div class="flags">
-        <div class="flags-wrapper">
-          <img
-            src="../src/assets/icons/tr.png"
-            alt="turkey"
-            class="flag"
-            :class="{ active: !isEnglish }"
-            @click="changeLanguage(false)"
-          />
-          <img
-            src="../src/assets/icons/uk.png"
-            alt="united-kingdom"
-            class="flag"
-            :class="{ active: isEnglish }"
-            @click="changeLanguage(true)"
-          />
+      <div class="top-bar">
+        <div :class="theme">
+          <div class="theme-toggle" @click="toggleTheme">
+            <span v-if="theme === 'light'">🌙</span>
+            <span v-else>🌞</span>
+          </div>
+        </div>
+        <div class="flags">
+          <div class="flags-wrapper">
+            <img
+              src="../src/assets/icons/tr.png"
+              alt="turkey"
+              class="flag"
+              :class="{ active: !isEnglish }"
+              @click="changeLanguage(false)"
+            />
+            <img
+              src="../src/assets/icons/uk.png"
+              alt="united-kingdom"
+              class="flag"
+              :class="{ active: isEnglish }"
+              @click="changeLanguage(true)"
+            />
+          </div>
         </div>
       </div>
       <transition name="fade" mode="out-in">
@@ -298,6 +306,7 @@ export default {
       isEnglish: true,
       data: data,
       rightSideScrollPosition: 0,
+      theme: localStorage.getItem('theme') || 'light',
     }
   },
   methods: {
@@ -308,6 +317,11 @@ export default {
         }
         this.isEnglish = isEnglish
       })
+    },
+    toggleTheme() {
+      this.theme = this.theme === 'light' ? 'dark' : 'light'
+      localStorage.setItem('theme', this.theme)
+      document.documentElement.setAttribute('data-theme', this.theme)
     },
   },
 }
@@ -342,37 +356,59 @@ export default {
   }
 
   .content-wrapper {
-    .flags {
+    .top-bar {
       display: flex;
-      justify-content: flex-end;
-      .flags-wrapper {
+      justify-content: space-between;
+      align-items: center;
+      padding: 0rem 1rem;
+      .flags {
+        display: flex;
+        justify-content: flex-end;
+        .flags-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          border-radius: 5px;
+          margin-top: 1rem;
+          margin-right: 1rem;
+
+          .flag {
+            width: 30px;
+            height: 30px;
+            border: var(--color-border) 1px solid;
+            border-radius: 50%;
+            transition:
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+
+            &.active {
+              border: var(--color-border) 2px solid;
+              box-shadow: 0 0 10px rgba(218, 218, 218, 0.5);
+              transform: scale(1.1);
+            }
+
+            &:hover {
+              cursor: pointer;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+      .theme-toggle {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        color: var(--color-heading);
+        font-size: 1rem;
         border-radius: 5px;
+        padding: 0.5rem;
+        user-select: none;
         margin-top: 1rem;
         margin-right: 1rem;
-
-        .flag {
-          width: 30px;
-          height: 30px;
-          border: var(--color-border) 1px solid;
-          border-radius: 50%;
-          transition:
-            transform 0.3s ease,
-            box-shadow 0.3s ease;
-
-          &.active {
-            border: var(--color-border) 2px solid;
-            box-shadow: 0 0 10px rgba(218, 218, 218, 0.5);
-            transform: scale(1.1);
-          }
-
-          &:hover {
-            cursor: pointer;
-            opacity: 0.8;
-          }
+        &:hover {
+          cursor: pointer;
+          background-color: var(--color-background);
         }
       }
     }
@@ -561,12 +597,12 @@ export default {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: #1e3356;
+                background-color: var(--languages-background);
                 border-radius: 100px;
                 .skill {
                   padding: 0.2rem 0.8rem;
-                  color: hsl(217, 61%, 57%);
-                  font-weight: bold;
+                  color: var(--languages-text);
+                  font-weight: 600;
                   font-size: 0.8rem;
                 }
               }
@@ -587,12 +623,12 @@ export default {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: #164728;
+                background-color: var(--frameworks-libraries-background);
                 border-radius: 100px;
                 .skill {
                   padding: 0.2rem 0.8rem;
-                  color: #1d9648;
-                  font-weight: bold;
+                  color: var(--frameworks-libraries-text);
+                  font-weight: 600;
                   font-size: 0.8rem;
                 }
               }
@@ -613,12 +649,12 @@ export default {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: hsl(12, 53%, 18%);
+                background-color: var(--databases-background);
                 border-radius: 100px;
                 .skill {
                   padding: 0.2rem 0.8rem;
-                  color: hsl(12, 53%, 48%);
-                  font-weight: bold;
+                  color: var(--databases-text);
+                  font-weight: 600;
                   font-size: 0.8rem;
                 }
               }
@@ -639,12 +675,12 @@ export default {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: hsl(51, 53%, 18%);
+                background-color: var(--practises-background);
                 border-radius: 100px;
                 .skill {
                   padding: 0.2rem 0.8rem;
-                  color: hsl(51, 53%, 48%);
-                  font-weight: bold;
+                  color: var(--practises-text);
+                  font-weight: 600;
                   font-size: 0.8rem;
                 }
               }

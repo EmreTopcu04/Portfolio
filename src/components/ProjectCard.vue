@@ -54,7 +54,7 @@ export default {
   align-items: center;
   height: 100%;
   width: 100%;
-  border-left: 5px solid #f9a826;
+  border-left: 5px solid var(--color-border);
   border-radius: 5px;
   padding: 1rem 2rem;
   gap: 3rem;
