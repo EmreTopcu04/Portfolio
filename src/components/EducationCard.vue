@@ -142,7 +142,7 @@ export default {
         .title {
           font-size: 1.2rem;
           font-weight: bold;
-          color: #e0e0e0;
+          color: var(--color-heading);
         }
         .company {
           font-size: 1rem;
@@ -150,20 +150,20 @@ export default {
       }
       .location {
         font-size: 1rem;
-        color: #e0e0e0;
+        color: var(--color-heading);
       }
       .time {
         font-size: 1rem;
-        color: #e0e0e0;
+        color: var(--color-heading);
       }
       .class_name {
         font-size: 1rem;
-        color: hsl(0, 0%, 77%);
+        color: var(--color-text);
       }
       .gpa-wrapper {
         display: flex;
         font-size: 1rem;
-        color: hsl(0, 0%, 77%);
+        color: var(--color-text);
       }
     }
   }
@@ -175,7 +175,7 @@ export default {
     width: fit-content;
     gap: 1rem;
     margin: 2rem 0;
-    color: #f1f1f1;
+    color: var(--color-text);
     padding: 0.2rem 0.4rem;
     border-radius: 5px;
     background-color: transparent;
@@ -184,13 +184,14 @@ export default {
     .description-text {
       display: flex;
       align-items: center;
+      justify-content: center;
       font-size: 1rem;
     }
 
     img {
       width: 15px;
       height: 15px;
-      filter: invert(100);
+      filter: var(--image);
       transition: transform 0.3s ease;
       transform: rotate(90deg);
       &.rotated {
@@ -214,7 +215,7 @@ export default {
       .year-wrapper {
         font-size: 1.2rem;
         font-weight: bold;
-        color: #e0e0e0;
+        color: var(--color-heading);
       }
       .courses-wrapper {
         display: flex;
@@ -223,11 +224,11 @@ export default {
         gap: 1rem;
         .course-name {
           font-size: 1rem;
-          color: #e0e0e0;
+          color: var(--color-heading);
         }
         .grade {
           font-size: 1rem;
-          color: #e0e0e0;
+          color: var(--color-heading);
         }
       }
     }
@@ -241,9 +242,9 @@ export default {
       .next-button {
         margin-top: 1rem;
         width: 15%;
-        color: #f1f1f1;
+        color: var(--color-text);
         background: transparent;
-        border: 1px solid #f1f1f1;
+        border: var(--color-border) 1px solid;
         border-radius: 5px;
       }
     }
@@ -414,6 +415,11 @@ export default {
           text-align: center;
         }
       }
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    .education-card {
+      color: black;
     }
   }
 }

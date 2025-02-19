@@ -357,14 +357,14 @@ export default {
         .flag {
           width: 30px;
           height: 30px;
-          border: #d4d4d4 1px solid;
+          border: var(--color-border) 1px solid;
           border-radius: 50%;
           transition:
             transform 0.3s ease,
             box-shadow 0.3s ease;
 
           &.active {
-            border: #d4d4d4 2px solid;
+            border: var(--color-border) 2px solid;
             box-shadow: 0 0 10px rgba(218, 218, 218, 0.5);
             transform: scale(1.1);
           }
@@ -390,7 +390,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: start;
-        padding: 2rem 2rem;
+        padding: 1rem 2rem;
         height: 100%;
         animation: fadeIn 1s;
 
@@ -403,7 +403,7 @@ export default {
           margin-top: 1rem;
           font-size: 2rem;
           font-weight: bold;
-          color: #f1f1f1;
+          color: var(--color-heading);
         }
         .occupation {
           font-size: 1.2rem;
@@ -416,7 +416,13 @@ export default {
           margin-top: 1rem;
           font-size: 0.8rem;
           text-align: start;
-          color: hsl(0, 0%, 85%);
+          color: var(--color-text);
+        }
+        .work-together-text {
+          font-size: 1.5rem;
+          color: var(--color-text);
+          font-weight: bold;
+          margin-top: 1rem;
         }
         .lower-part {
           display: flex;
@@ -434,25 +440,32 @@ export default {
               align-items: center;
               justify-content: center;
               gap: 10%;
-              color: #f1f1f1;
+              color: var(--color-text);
               font-size: 100%;
               padding: 0.2rem 0.4rem;
-              border: 1px solid #f1f1f1;
+              border: 1px solid var(--color-border);
               border-radius: 5px;
               background-color: transparent;
               transition: all 0.3s;
 
+              .folder-image {
+                width: 20%;
+                height: 20%;
+                filter: var(--image);
+              }
+
               &:hover {
-                background-color: #f1f1f1;
-                color: #000;
+                background-color: var(--color-background-invert);
+                color: var(--color-text-invert);
                 cursor: pointer;
                 .folder-image {
-                  filter: invert(100%);
+                  filter: var(--image-invert);
                 }
               }
-              .folder-image {
-                width: 15%;
-                height: 15%;
+              .resume-text {
+                display: flex;
+                text-align: center;
+                font-size: 1rem;
               }
             }
           }
@@ -470,9 +483,9 @@ export default {
               .icon {
                 width: 25px;
                 height: 25px;
-                filter: invert(80%);
+                filter: var(--image);
                 &:hover {
-                  filter: invert(100%);
+                  filter: var(--image-invert);
                   cursor: pointer;
                 }
               }
@@ -484,23 +497,18 @@ export default {
           flex-direction: column;
           align-items: start;
           justify-content: start;
-          margin-top: 2rem;
-          .work-together-text {
-            font-size: 1.5rem;
-            color: #f1f1f1;
-            font-weight: bold;
-          }
+
           .work-together-button {
             margin-top: 1rem;
             padding: 0.5rem 2rem;
-            border: 1px solid #f1f1f1;
+            border: 1px solid var(--color-background);
             border-radius: 5px;
-            color: #f1f1f1;
+            color: var(--color-text);
             font-size: 1rem;
             transition: all 0.3s;
             &:hover {
-              background-color: #f1f1f1;
-              color: #000;
+              background-color: var(--color-background-invert);
+              color: var(--color-text-invert);
               cursor: pointer;
             }
           }
@@ -510,7 +518,7 @@ export default {
         width: 75%;
         height: 100%;
         overflow-y: scroll;
-        padding: 2rem 2rem;
+        padding: 1rem 2rem;
         -ms-overflow-style: none;
         scrollbar-width: none;
         animation: fadeIn 1s;
@@ -519,7 +527,7 @@ export default {
           h1 {
             font-size: 2rem;
             font-weight: bold;
-            color: #f1f1f1;
+            color: var(--color-heading);
           }
           .paragraph-wrapper {
             margin-top: 1rem;
@@ -527,7 +535,7 @@ export default {
             p {
               margin-top: 0.5rem;
               font-size: 1rem;
-              color: hsl(0, 0%, 80%);
+              color: var(--color-text);
             }
           }
         }
@@ -537,13 +545,13 @@ export default {
           h1 {
             font-size: 2rem;
             font-weight: bold;
-            color: #f1f1f1;
+            color: var(--color-heading);
           }
           .languages-wrapper {
             h2 {
               font-size: 1.2rem;
               font-weight: bold;
-              color: #f1f1f1;
+              color: var(--color-text);
             }
             .languages {
               display: flex;
@@ -569,7 +577,7 @@ export default {
             h2 {
               font-size: 1.2rem;
               font-weight: bold;
-              color: #f1f1f1;
+              color: var(--color-text);
             }
             .frameworks {
               display: flex;
@@ -595,7 +603,7 @@ export default {
             h2 {
               font-size: 1.2rem;
               font-weight: bold;
-              color: #f1f1f1;
+              color: var(--color-text);
             }
             .databases {
               display: flex;
@@ -621,7 +629,7 @@ export default {
             h2 {
               font-size: 1.2rem;
               font-weight: bold;
-              color: #f1f1f1;
+              color: var(--color-text);
             }
             .practises {
               display: flex;
@@ -648,7 +656,7 @@ export default {
           h1 {
             font-size: 2rem;
             font-weight: bold;
-            color: #f1f1f1;
+            color: var(--color-heading);
           }
         }
         .education-wrapper {
@@ -656,7 +664,7 @@ export default {
           h1 {
             font-size: 2rem;
             font-weight: bold;
-            color: #f1f1f1;
+            color: var(--color-heading);
           }
         }
         .project-wrapper {
@@ -664,7 +672,7 @@ export default {
           h1 {
             font-size: 2rem;
             font-weight: bold;
-            color: #f1f1f1;
+            color: var(--color-heading);
           }
         }
       }

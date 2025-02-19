@@ -94,22 +94,23 @@ export default {
         .title {
           font-size: 1.2rem;
           font-weight: bold;
-          color: #e0e0e0;
+          color: var(--color-heading);
         }
         .company {
           font-size: 1rem;
+          color: var(--color-heading);
         }
       }
       .location {
         font-size: 1rem;
-        color: #e0e0e0;
+        color: var(--color-heading);
       }
     }
   }
   .description {
     margin-top: 1rem;
     font-size: 1rem;
-    color: #e0e0e0;
+    color: var(--color-text);
   }
 
   @media (max-width: 768px) {

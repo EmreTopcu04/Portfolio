@@ -71,9 +71,9 @@ export default {
       align-items: center;
       .image {
         width: 100%;
-        height: auto; /* Maintain aspect ratio */
-        max-width: 300px; /* Set a maximum width */
-        max-height: 300px; /* Set a maximum height */
+        height: auto;
+        max-width: 300px;
+        max-height: 300px;
         border-radius: 20px;
       }
     }
@@ -89,12 +89,11 @@ export default {
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      gap: 1rem;
       h3 {
         width: 100%;
         font-size: 1.5rem;
         font-weight: 600;
-        color: #e0e0e0;
+        color: var(--color-heading);
       }
       p {
         font-size: 1rem;
@@ -106,28 +105,27 @@ export default {
       align-items: center;
       justify-content: flex-start;
       gap: 0.5rem;
-      padding-top: 1rem;
       text-decoration: none;
       width: fit-content;
       .github-icon {
         display: flex;
         align-items: center;
         justify-content: center;
-        filter: invert(80%);
+        filter: var(--image);
         width: 2rem;
         height: 2rem;
       }
       .link-text {
         text-align: center;
         font-size: 1rem;
-        color: #e0e0e0;
+        color: var(--color-text);
       }
       &:hover {
-        .link-text {
-          color: hsl(0, 0%, 98%);
-        }
         .github-icon {
-          filter: invert(100%);
+          filter: var(--image-invert);
+        }
+        .link-text {
+          color: var(--color-heading);
         }
       }
     }
