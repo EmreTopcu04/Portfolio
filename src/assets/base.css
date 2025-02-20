@@ -41,15 +41,15 @@
   --image: invert(70%);
   --image-invert: invert(10%);
 
-  --languages-text: hsl(217, 100%, 75%);
-  --frameworks-libraries-text: hsl(141, 67%, 57%);
-  --databases-text: hsl(12, 76%, 65%);
-  --practises-text: hsl(51, 82%, 67%);
+  --languages-text: hsl(220, 90%, 85%);
+  --frameworks-libraries-text: hsl(145, 70%, 60%);
+  --databases-text: hsl(10, 80%, 70%);
+  --practises-text: hsl(50, 90%, 65%);
 
-  --languages-background: hsl(218, 40%, 42%);
-  --frameworks-libraries-background: hsl(141, 40%, 41%);
-  --databases-background: hsl(12, 45%, 37%);
-  --practises-background: hsl(52, 46%, 36%);
+  --languages-background: hsl(220, 50%, 30%);
+  --frameworks-libraries-background: hsl(145, 45%, 32%);
+  --databases-background: hsl(10, 50%, 32%);
+  --practises-background: hsl(50, 50%, 30%);
 }
 
 *,

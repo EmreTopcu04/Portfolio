@@ -3,9 +3,19 @@
     <div class="content-wrapper">
       <div class="top-bar">
         <div :class="theme">
-          <div class="theme-toggle" @click="toggleTheme">
-            <span v-if="theme === 'light'">🌙</span>
-            <span v-else>🌞</span>
+          <div class="theme-toggle">
+            <img
+              v-if="theme === 'light'"
+              class="theme-button-light"
+              src="/src/assets/icons/mode-light.svg"
+              @click="toggleTheme"
+            />
+            <img
+              v-else
+              class="theme-button-dark"
+              src="/src/assets/icons/mode-dark.svg"
+              @click="toggleTheme"
+            />
           </div>
         </div>
         <div class="flags">
@@ -285,6 +295,7 @@
         </div>
       </transition>
     </div>
+    <div class="footer">&copy; {{ new Date().getFullYear() }} Emre. All rights reserved.</div>
   </div>
 </template>
 
@@ -318,11 +329,17 @@ export default {
         this.isEnglish = isEnglish
       })
     },
+
     toggleTheme() {
       this.theme = this.theme === 'light' ? 'dark' : 'light'
       localStorage.setItem('theme', this.theme)
       document.documentElement.setAttribute('data-theme', this.theme)
     },
+  },
+  created() {
+    this.theme = 'light'
+    localStorage.setItem('theme', 'light')
+    document.documentElement.setAttribute('data-theme', 'light')
   },
 }
 </script>
@@ -330,6 +347,7 @@ export default {
 <style scoped lang="scss">
 .app-c {
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -356,22 +374,27 @@ export default {
   }
 
   .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 1rem);
     .top-bar {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
-      padding: 0rem 1rem;
+      padding: 1rem;
       .flags {
         display: flex;
+        align-items: center;
         justify-content: flex-end;
+        border-left: 3px solid var(--color-border);
+        padding: 0rem 1rem;
         .flags-wrapper {
           display: flex;
           justify-content: center;
           align-items: center;
           gap: 1rem;
           border-radius: 5px;
-          margin-top: 1rem;
-          margin-right: 1rem;
 
           .flag {
             width: 30px;
@@ -400,15 +423,32 @@ export default {
         justify-content: center;
         align-items: center;
         color: var(--color-heading);
-        font-size: 1rem;
         border-radius: 5px;
-        padding: 0.5rem;
+
+        padding: 0rem 1rem;
         user-select: none;
-        margin-top: 1rem;
-        margin-right: 1rem;
+
         &:hover {
           cursor: pointer;
           background-color: var(--color-background);
+        }
+
+        .theme-button-light {
+          width: 30px;
+          height: 30px;
+          filter: var(--image);
+          &:hover {
+            filter: var(--image-invert);
+          }
+        }
+        .theme-button-dark {
+          width: 30px;
+          height: 30px;
+          filter: var(--image);
+
+          &:hover {
+            filter: var(--image-invert);
+          }
         }
       }
     }
@@ -417,7 +457,7 @@ export default {
       width: 100%;
       height: 100%;
       overflow: hidden;
-      padding: 1rem;
+      padding: 0rem 1rem;
       gap: 2rem;
       justify-content: center;
       align-items: center;
@@ -426,7 +466,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: start;
-        padding: 1rem 2rem;
+        padding: 0rem 2rem;
         height: 100%;
         animation: fadeIn 1s;
 
@@ -482,7 +522,10 @@ export default {
               border: 1px solid var(--color-border);
               border-radius: 5px;
               background-color: transparent;
-              transition: all 0.3s;
+              transition:
+                background-color 0.3s,
+                border-color 0.3s,
+                filter 0.3s;
 
               .folder-image {
                 width: 20%;
@@ -554,7 +597,7 @@ export default {
         width: 75%;
         height: 100%;
         overflow-y: scroll;
-        padding: 1rem 2rem;
+        padding: 0rem 2rem;
         -ms-overflow-style: none;
         scrollbar-width: none;
         animation: fadeIn 1s;
@@ -716,6 +759,19 @@ export default {
         display: none;
       }
     }
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-size: 0.7rem;
+    height: 1rem;
+    padding: 0.5rem 0rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 
   @media (max-width: 768px) {
