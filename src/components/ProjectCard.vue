@@ -1,22 +1,5 @@
 <template>
   <div class="project-card-c">
-    <div class="left-side">
-      <div v-if="image == 'chess_bot'" class="image-wrapper">
-        <img src="../assets/icons/chess.png" alt="project image" class="image" />
-      </div>
-      <div v-else-if="image == 'aibot'" class="image-wrapper">
-        <img src="../assets/icons/aibot.png" alt="project image" class="image" />
-      </div>
-      <div v-else-if="image == 'assembly'" class="image-wrapper">
-        <img src="../assets/icons/assembly.png" alt="project image" class="image" />
-      </div>
-      <div v-else-if="image == 'solstice'" class="image-wrapper">
-        <img src="../assets/icons/solstice.png" alt="project image" class="image" />
-      </div>
-      <div v-else-if="image == 'godot'" class="image-wrapper">
-        <img src="../assets/icons/godot.png" alt="project image" class="image" />
-      </div>
-    </div>
     <div class="right-side">
       <div class="title-description-wrapper">
         <h3>{{ title }}</h3>
@@ -34,16 +17,11 @@
 export default {
   name: 'ProjectCard',
   props: {
-    image: String,
     title: String,
     description: String,
     link: String,
   },
-  data() {
-    return {
-      imageUrl: this.image,
-    }
-  },
+  data() {},
 }
 </script>
 
@@ -65,18 +43,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    .image-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .image {
-        width: 100%;
-        height: auto;
-        max-width: 300px;
-        max-height: 300px;
-        border-radius: 20px;
-      }
-    }
   }
   .right-side {
     display: flex;
@@ -135,15 +101,6 @@ export default {
     flex-direction: column;
     padding: 1rem;
 
-    .left-side {
-      .image-wrapper {
-        .image {
-          width: 80%;
-          height: auto;
-        }
-      }
-    }
-
     .right-side {
       .title-description-wrapper {
         h3 {
@@ -169,15 +126,6 @@ export default {
     flex-direction: column;
     padding: 1rem;
 
-    .left-side {
-      .image-wrapper {
-        .image {
-          width: 80%;
-          height: auto;
-        }
-      }
-    }
-
     .right-side {
       .title-description-wrapper {
         h3 {
@@ -202,15 +150,6 @@ export default {
   @media (max-height: 480px) {
     flex-direction: column;
     padding: 1rem;
-
-    .left-side {
-      .image-wrapper {
-        .image {
-          width: 60%;
-          height: auto;
-        }
-      }
-    }
 
     .right-side {
       .title-description-wrapper {

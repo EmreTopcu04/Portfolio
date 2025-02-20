@@ -29,7 +29,7 @@
         </div>
 
         <div class="location">{{ location }}</div>
-        <p>{{ time }}</p>
+        <div class="time">{{ time }}</div>
       </div>
     </div>
     <div class="description">{{ description }}</div>
@@ -73,6 +73,7 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+
       .image {
         width: 120px;
         height: 120px;
@@ -108,7 +109,7 @@ export default {
     }
   }
   .description {
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     font-size: 1rem;
     color: var(--color-text);
   }

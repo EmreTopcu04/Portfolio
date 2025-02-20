@@ -40,7 +40,7 @@
       <transition name="fade" mode="out-in">
         <div class="scroll-wrapper" :key="isEnglish">
           <div class="left-side">
-            <div class="image">
+            <div class="image-wrapper">
               <img src="../src/assets/photo.jpeg" alt="profile" class="image" />
             </div>
             <div class="name">Emre Topcu</div>
@@ -295,7 +295,6 @@
         </div>
       </transition>
     </div>
-    <div class="footer">&copy; {{ new Date().getFullYear() }} Emre. All rights reserved.</div>
   </div>
 </template>
 
@@ -331,9 +330,16 @@ export default {
     },
 
     toggleTheme() {
+      const appElement = document.querySelector('.app-c')
+      appElement.classList.add('theme-transition')
+
       this.theme = this.theme === 'light' ? 'dark' : 'light'
       localStorage.setItem('theme', this.theme)
       document.documentElement.setAttribute('data-theme', this.theme)
+
+      setTimeout(() => {
+        appElement.classList.remove('theme-transition')
+      }, 500)
     },
   },
   created() {
@@ -373,6 +379,19 @@ export default {
     }
   }
 
+  &.theme-transition {
+    animation: themeTransition 0.5s ease;
+  }
+
+  @keyframes themeTransition {
+    0% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   .content-wrapper {
     display: flex;
     flex-direction: column;
@@ -399,7 +418,7 @@ export default {
           .flag {
             width: 30px;
             height: 30px;
-            border: var(--color-border) 1px solid;
+            border: var(--color-border) 2px solid;
             border-radius: 50%;
             transition:
               transform 0.3s ease,
@@ -407,7 +426,6 @@ export default {
 
             &.active {
               border: var(--color-border) 2px solid;
-              box-shadow: 0 0 10px rgba(218, 218, 218, 0.5);
               transform: scale(1.1);
             }
 
@@ -430,7 +448,6 @@ export default {
 
         &:hover {
           cursor: pointer;
-          background-color: var(--color-background);
         }
 
         .theme-button-light {
@@ -470,10 +487,17 @@ export default {
         height: 100%;
         animation: fadeIn 1s;
 
-        .image {
+        .image-wrapper {
           width: 150px;
           height: 150px;
           border-radius: 50%;
+          border: 3px solid var(--color-border);
+          .image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+          }
         }
         .name {
           margin-top: 1rem;
@@ -759,19 +783,6 @@ export default {
         display: none;
       }
     }
-  }
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-background);
-    color: var(--color-text);
-    font-size: 0.7rem;
-    height: 1rem;
-    padding: 0.5rem 0rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
   }
 
   @media (max-width: 768px) {
