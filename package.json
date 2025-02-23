@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "copyfiles -u 1 public/google-site-verification=xxxxxx.html dist/",
     "deploy": "npm run build && gh-pages -d dist",
     "preview": "vite preview",
     "lint": "eslint . --fix",
@@ -19,6 +20,7 @@
     "@eslint/js": "^9.14.0",
     "@vitejs/plugin-vue": "^5.1.4",
     "@vue/eslint-config-prettier": "^10.1.0",
+    "copyfiles": "^2.4.1",
     "eslint": "^9.14.0",
     "eslint-plugin-vue": "^9.30.0",
     "gh-pages": "^6.3.0",
