@@ -9,12 +9,14 @@
               class="theme-button-light"
               src="/src/assets/icons/mode-light.svg"
               @click="toggleTheme"
+              alt="light-mode"
             />
             <img
               v-else
               class="theme-button-dark"
               src="/src/assets/icons/mode-dark.svg"
               @click="toggleTheme"
+              alt="dark-mode"
             />
           </div>
         </div>
@@ -22,14 +24,14 @@
           <div class="flags-wrapper">
             <img
               src="../src/assets/icons/tr.png"
-              alt="turkey"
+              alt="turkey-flag"
               class="flag"
               :class="{ active: !isEnglish }"
               @click="changeLanguage(false)"
             />
             <img
               src="../src/assets/icons/uk.png"
-              alt="united-kingdom"
+              alt="united-kingdom-flag"
               class="flag"
               :class="{ active: isEnglish }"
               @click="changeLanguage(true)"
