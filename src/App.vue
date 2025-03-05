@@ -63,11 +63,28 @@
             </div>
             <div class="lower-part">
               <a
-                href="https://drive.google.com/file/d/1dGNVsC6R08RiJlk8kJNA079frqcIoZPy/view?usp=sharing"
+                href="https://drive.google.com/file/d/1mtwozFa9LELwM9Ve9NZs4D6-0qjJStex/view?usp=sharing"
                 target="_blank"
                 class="resume-link"
+                v-if="isEnglish"
               >
                 <div class="resume">
+                  <img
+                    src="../src/assets/icons/folder_icon.svg"
+                    alt="folder"
+                    class="folder-image"
+                  />
+                  <div class="resume-text" v-if="isEnglish">Resume</div>
+                  <div class="resume-text" v-else>Özgeçmiş</div>
+                </div>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1M25Tt7TFSTBfmsy92y_grJ3KZnZ8e6-V/view?usp=sharing"
+                target="_blank"
+                class="resume-link"
+                v-else
+              >
+              <div class="resume">
                   <img
                     src="../src/assets/icons/folder_icon.svg"
                     alt="folder"
