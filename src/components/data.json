@@ -385,34 +385,40 @@
     "en": [
       {
         "image": "chess_bot",
-        "title": "Chess Bot",
-        "description": "Chess Bot is a GUI-based chess program that detects the best 3 moves and moves the pieces randomly. Prepared for an academic paper.",
+        "title": "AI Chess Bot",
+        "description": "A simple chess program where two chess bots play the number of games specified by the user. During the game, the bots identify the best 3 moves and randomly select one to play. Designed for an academic paper.",
         "link": "https://github.com/EmreTopcu04/Chess_Bot"
       },
       {
         "image": "aibot",
-        "title": "AI Powered Trading Bot",
-        "description": "This project is an AI-powered trading bot that uses machine learning algorithms to predict stock prices and make profitable trades. The bot is designed to be user-friendly and easy to use, with a simple interface that allows users to input their trading preferences and receive real-time trading recommendations.",
+        "title": "AI-Powered Trading Bot",
+        "description": "This project is an AI-powered trading bot that uses machine learning algorithms to predict cryptocurrency prices and make profitable trades. The bot is designed to be user-friendly and easy to use, with a simple interface that allows users to input their trading preferences and receive real-time trade suggestions.",
         "link": "https://github.com/EmreTopcu04/AI_Powered_Trading_Bot"
       },
       {
         "image": "solstice",
         "title": "Solstice",
-        "description": "This project prioritizes a user-centric interface and reliable tracking features to empower individuals in managing their training and health activities.",
+        "description": "This project is an Android application aimed at empowering individuals to manage their education and health activities by prioritizing a user-centric interface and reliable tracking features.",
         "link": "https://github.com/akdenizcse/cse-234-term-project-cse-234-project_12"
+      },
+      {
+        "image": "gemma2",
+        "title": "Fine-Tuning Gemma2 Model",
+        "description": "This work aims to fine-tune the Gemma2 language model to better understand and generate Turkish text.",
+        "link": "https://github.com/EmreTopcu04/Fine-Tuning-Gemma2"
       },
       {
         "image": "assembly",
         "title": "Assembly Projects",
-        "description": "This repository contains various assembly language projects developed as part of my coursework. The projects cover a wide range of topics, from basic arithmetic operations to more complex algorithms, all implemented in assembly language to interact directly with hardware and demonstrate low-level programming skills.",
+        "description": "This repository contains various assembly language projects developed as part of my coursework. The projects cover a wide range of topics, from basic arithmetic operations to more complex algorithms, all implemented in assembly language to interact directly with hardware and showcase low-level programming skills.",
         "link": "https://github.com/EmreTopcu04/Assembly_Projects"
       }
     ],
     "tr": [
       {
         "image": "chess_bot",
-        "title": "Satranç Botu",
-        "description": "Satranç Botu, en iyi 3 hamleyi algılayan ve taşları rastgele hareket ettiren basit bir arayüze sahip satranç programıdır. Akademik makale için hazırlanmıştır.",
+        "title": "AI Satranç Botu",
+        "description": "Karşılıklı 2 satranç botunun kullanıcının belirttiği oyun sayısı kadar oynadığı, oynarken de en iyi 3 hamleyi tespit edip bu hamleler içerisinden rastgele bir tanesini seçip o hamleyi oynayan, basit bir arayüze sahip satranç programıdır. Akademik bir makale için tasarlanmıştır.",
         "link": "https://github.com/EmreTopcu04/Chess_Bot"
       },
       {
@@ -424,8 +430,14 @@
       {
         "image": "solstice",
         "title": "Solstice",
-        "description": "Bu proje, kullanıcı merkezli bir arayüz ve güvenilir izleme özelliklerini önceliklendirerek bireyleri eğitim ve sağlık faaliyetlerini yönetmelerinde güçlendirmeyi amaçlamaktadır.",
+        "description": "Bu proje, kullanıcı merkezli bir arayüz ve güvenilir izleme özelliklerini önceliklendirerek bireyleri eğitim ve sağlık faaliyetlerini yönetmelerinde güçlendirmeyi amaçlayan bir android uygulamasıdır.",
         "link": "https://github.com/akdenizcse/cse-234-term-project-cse-234-project_12"
+      },
+      {
+        "image": "gemma2",
+        "title": "Gemma2 Modelinin İnce Ayarlanması",
+        "description":"Bu çalışma, Gemma2 dil modelini Türkçe metinleri daha iyi anlayıp üretebilecek şekilde özelleştirmek için ince ayar yapmayı amaçlamaktadır.",
+        "link": "https://github.com/EmreTopcu04/Fine-Tuning-Gemma2"
       },
       {
         "image": "assembly",
