@@ -84,7 +84,7 @@
                 class="resume-link"
                 v-else
               >
-              <div class="resume">
+                <div class="resume">
                   <img
                     src="../src/assets/icons/folder_icon.svg"
                     alt="folder"
@@ -325,11 +325,7 @@ import data from './components/data.json'
 
 export default {
   name: 'App',
-  components: {
-    ProjectCard,
-    JobCard,
-    EducationCard,
-  },
+  components: { ProjectCard, JobCard, EducationCard },
   data() {
     return {
       isEnglish: true,
@@ -360,11 +356,7 @@ export default {
         appElement.classList.remove('theme-transition')
       }, 500)
     },
-  },
-  created() {
-    this.theme = 'light'
-    localStorage.setItem('theme', 'light')
-    document.documentElement.setAttribute('data-theme', 'light')
+    created() {},
   },
 }
 </script>
