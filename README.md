@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! You'll find information about my proje
 
 ## Website
 
-You can visit my portfolio [here](https://emretopcu04.github.io/Portfolio/).
+You can visit my portfolio [here](https://www.emretopcu.com/).
 
 ## About Me
 
