@@ -120,10 +120,6 @@
               </div>
             </div>
             <div class="chatbot-container">
-              <div class="chatbot-toggle" @click="toggleChatbot">
-                <div class="chatbot-label" v-if="isEnglish">Click To Chat With Me!</div>
-                <div class="chatbot-label" v-else>Benimle Konuşmak İçin Buraya Tıkla</div>
-              </div>
               <transition name="slide-fade">
                 <div class="chatbot-dialog" v-if="isChatbotOpen">
                   <div class="chatbot-dialog-header">
@@ -164,12 +160,16 @@
                       class="chatbot-input-field"
                     />
                     <button @click="sendMessage" class="chatbot-send-button">
-                      <span v-if="isEnglish">Send</span>
-                      <span v-else>Gönder</span>
+                      <span v-if="isEnglish" class="chatbot-send-button-text">Send</span>
+                      <span v-else class="chatbot-send-button-text">Gönder</span>
                     </button>
                   </div>
                 </div>
               </transition>
+              <div class="chatbot-toggle" @click="toggleChatbot">
+                <div class="chatbot-label" v-if="isEnglish">Click To Chat With Me!</div>
+                <div class="chatbot-label" v-else>Benimle Konuşmak İçin Buraya Tıkla</div>
+              </div>
             </div>
           </div>
           <div class="right-side" ref="rightSide">
@@ -886,7 +886,7 @@ export default {
             }
 
             .chatbot-label {
-              font-size: 1rem;
+              font-size: 0.8rem;
               color: var(--color-heading);
               font-weight: 600;
               display: flex;
@@ -901,7 +901,7 @@ export default {
             bottom: 120%;
             left: 0;
             width: 100%;
-            height: 700px;
+            height: 500px;
             background-color: var(--color-background-soft);
             border-radius: 10px;
             z-index: 100;
@@ -1028,9 +1028,11 @@ export default {
               display: flex;
               padding: 0.7rem;
               border-top: 1px solid var(--color-border);
+              width: 100%;
 
               .chatbot-input-field {
                 flex-grow: 1;
+                width: 100%;
                 padding: 0.5rem;
                 border: 1px solid var(--color-border);
                 border-radius: 5px;
@@ -1046,6 +1048,7 @@ export default {
 
               .chatbot-send-button {
                 margin-left: 0.5rem;
+                width: 25%;
                 padding: 0.5rem 1rem;
                 background-color: var(--color-background-mute);
                 color: var(--color-text);
@@ -1059,9 +1062,11 @@ export default {
                 &:hover {
                   background-color: var(--color-border-hover);
                 }
-
-                &:active {
-                  transform: translateY(0);
+                .chatbot-send-button-text {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 100%;
                 }
               }
             }

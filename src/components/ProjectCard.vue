@@ -21,7 +21,9 @@ export default {
     description: String,
     link: String,
   },
-  data() {},
+  data() {
+    return {}
+  },
 }
 </script>
 
