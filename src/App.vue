@@ -495,16 +495,21 @@ export default {
         if (this.$refs.rightSide) {
           this.rightSideScrollPosition = this.$refs.rightSide.scrollTop
         }
-        this.isEnglish = isEnglish
-        localStorage.setItem('language', isEnglish ? 'en' : 'tr')
-        this.systemPrompt = this.systemPrompt.replace(/Language instruction:.*/g, '')
+        if (this.isEnglish != isEnglish) {
+          this.isEnglish = isEnglish
+          localStorage.setItem('language', isEnglish ? 'en' : 'tr')
+          this.systemPrompt = this.systemPrompt.replace(/Language instruction:.*/g, '')
 
-        if (!isEnglish) {
-          this.systemPrompt += '\nLanguage instruction: Please respond in Turkish.'
+          if (!isEnglish) {
+            this.systemPrompt += '\nLanguage instruction: Please respond in Turkish.'
+          }
+
+          if (this.isChatbotOpen) {
+            this.isChatbotOpen = false
+          }
+
+          this.messages = []
         }
-
-        this.toggleChatbot()
-        this.messages = []
       })
     },
 
