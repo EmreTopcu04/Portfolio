@@ -2,8 +2,8 @@
   <div class="project-card-c">
     <div class="right-side">
       <div class="title-description-wrapper">
-        <h3>{{ title }}</h3>
-        <p>{{ description }}</p>
+        <div class="title">{{ title }}</div>
+        <div class="description">{{ description }}</div>
       </div>
       <a :href="link" target="_blank" class="link">
         <img src="../assets/icons/github.svg" alt="github" class="github-icon" />
@@ -55,13 +55,14 @@ export default {
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      h3 {
+      gap: 1rem;
+      .title {
         width: 100%;
         font-size: 1.5rem;
         font-weight: 600;
         color: var(--color-heading);
       }
-      p {
+      .description {
         font-size: 1rem;
         width: 100%;
       }
@@ -73,6 +74,7 @@ export default {
       gap: 0.5rem;
       text-decoration: none;
       width: fit-content;
+      margin-top: 1rem;
       .github-icon {
         display: flex;
         align-items: center;
@@ -103,10 +105,10 @@ export default {
 
     .right-side {
       .title-description-wrapper {
-        h3 {
+        .title {
           font-size: 1.2rem;
         }
-        p {
+        .description {
           font-size: 0.9rem;
         }
       }
@@ -128,10 +130,10 @@ export default {
 
     .right-side {
       .title-description-wrapper {
-        h3 {
+        .title {
           font-size: 1.2rem;
         }
-        p {
+        .description {
           font-size: 0.9rem;
         }
       }
@@ -153,10 +155,10 @@ export default {
 
     .right-side {
       .title-description-wrapper {
-        h3 {
+        .title {
           font-size: 1.2rem;
         }
-        p {
+        .description {
           font-size: 0.9rem;
         }
       }

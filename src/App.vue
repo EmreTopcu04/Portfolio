@@ -42,76 +42,134 @@
       <transition name="fade" mode="out-in">
         <div class="scroll-wrapper" :key="isEnglish">
           <div class="left-side">
-            <div class="image-wrapper">
-              <img src="../src/assets/photo.jpeg" alt="profile" class="image" />
-            </div>
-            <div class="name">Emre Topcu</div>
-            <div class="occupation" v-if="isEnglish">Computer Science Engineering Student</div>
-            <div class="occupation" v-else>Bilgisayar Mühendisliği Öğrencisi</div>
-            <div class="location" v-if="isEnglish">📍 Antalya, Turkey 🇹🇷</div>
-            <div class="location" v-else>📍 Antalya, Türkiye 🇹🇷</div>
-            <div class="brief-text" v-if="isEnglish">
-              Building Real Products For Real Clients, Not Just More Projects
-            </div>
-            <div class="brief-text" v-else>
-              Yalnızca Proje Değil, Gerçek Müşterilere, Gerçek Ürünler İnşa Ediyorum.
-            </div>
+            <div class="profile">
+              <div class="image-wrapper">
+                <img src="../src/assets/photo.jpeg" alt="profile" class="image" />
+              </div>
+              <div class="name">Emre Topcu</div>
+              <div class="occupation" v-if="isEnglish">Computer Science Engineering Student</div>
+              <div class="occupation" v-else>Bilgisayar Mühendisliği Öğrencisi</div>
+              <div class="location" v-if="isEnglish">📍 Antalya, Turkey 🇹🇷</div>
+              <div class="location" v-else>📍 Antalya, Türkiye 🇹🇷</div>
+              <div class="brief-text" v-if="isEnglish">
+                Building Real Products For Real Clients, Not Just More Projects
+              </div>
+              <div class="brief-text" v-else>
+                Yalnızca Proje Değil, Gerçek Müşterilere, Gerçek Ürünler İnşa Ediyorum.
+              </div>
 
-            <div class="work-together-section">
-              <div class="work-together-text" v-if="isEnglish">Let's Work Together</div>
-              <div class="work-together-text" v-else>Birlikte Çalışalım</div>
-            </div>
-            <div class="lower-part">
-              <a
-                href="https://drive.google.com/file/d/1mtwozFa9LELwM9Ve9NZs4D6-0qjJStex/view?usp=sharing"
-                target="_blank"
-                class="resume-link"
-                v-if="isEnglish"
-              >
-                <div class="resume">
-                  <img
-                    src="../src/assets/icons/folder_icon.svg"
-                    alt="folder"
-                    class="folder-image"
-                  />
-                  <div class="resume-text" v-if="isEnglish">Resume</div>
-                  <div class="resume-text" v-else>Özgeçmiş</div>
-                </div>
-              </a>
-              <a
-                href="https://drive.google.com/file/d/1M25Tt7TFSTBfmsy92y_grJ3KZnZ8e6-V/view?usp=sharing"
-                target="_blank"
-                class="resume-link"
-                v-else
-              >
-                <div class="resume">
-                  <img
-                    src="../src/assets/icons/folder_icon.svg"
-                    alt="folder"
-                    class="folder-image"
-                  />
-                  <div class="resume-text" v-if="isEnglish">Resume</div>
-                  <div class="resume-text" v-else>Özgeçmiş</div>
-                </div>
-              </a>
+              <div class="work-together-section">
+                <div class="work-together-text" v-if="isEnglish">Let's Work Together</div>
+                <div class="work-together-text" v-else>Birlikte Çalışalım</div>
+              </div>
+              <div class="lower-part">
+                <a
+                  href="https://drive.google.com/file/d/1mtwozFa9LELwM9Ve9NZs4D6-0qjJStex/view?usp=sharing"
+                  target="_blank"
+                  class="resume-link"
+                  v-if="isEnglish"
+                >
+                  <div class="resume">
+                    <img
+                      src="../src/assets/icons/folder_icon.svg"
+                      alt="folder"
+                      class="folder-image"
+                    />
+                    <div class="resume-text" v-if="isEnglish">Resume</div>
+                    <div class="resume-text" v-else>Özgeçmiş</div>
+                  </div>
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1M25Tt7TFSTBfmsy92y_grJ3KZnZ8e6-V/view?usp=sharing"
+                  target="_blank"
+                  class="resume-link"
+                  v-else
+                >
+                  <div class="resume">
+                    <img
+                      src="../src/assets/icons/folder_icon.svg"
+                      alt="folder"
+                      class="folder-image"
+                    />
+                    <div class="resume-text" v-if="isEnglish">Resume</div>
+                    <div class="resume-text" v-else>Özgeçmiş</div>
+                  </div>
+                </a>
 
-              <div class="links">
                 <div class="links">
-                  <a href="https://github.com/EmreTopcu04" target="_blank" class="link">
-                    <img src="../src/assets/icons/github.svg" alt="github" class="icon" />
-                  </a>
-                  <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info.etopcu@gmail.com"
-                    target="_blank"
-                    class="link"
-                  >
-                    <img src="../src/assets/icons/email.svg" alt="gmail" class="icon" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/emre-topcu04/" target="_blank" class="link">
-                    <img src="../src/assets/icons/linkedin.svg" alt="linkedin" class="icon" />
-                  </a>
+                  <div class="links">
+                    <a href="https://github.com/EmreTopcu04" target="_blank" class="link">
+                      <img src="../src/assets/icons/github.svg" alt="github" class="icon" />
+                    </a>
+                    <a
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=info.etopcu@gmail.com"
+                      target="_blank"
+                      class="link"
+                    >
+                      <img src="../src/assets/icons/email.svg" alt="gmail" class="icon" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/emre-topcu04/"
+                      target="_blank"
+                      class="link"
+                    >
+                      <img src="../src/assets/icons/linkedin.svg" alt="linkedin" class="icon" />
+                    </a>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="chatbot-container">
+              <div class="chatbot-toggle" @click="toggleChatbot">
+                <div class="chatbot-label" v-if="isEnglish">Click To Chat With Me!</div>
+                <div class="chatbot-label" v-else>Benimle Konuşmak İçin Buraya Tıkla</div>
+              </div>
+              <transition name="slide-fade">
+                <div class="chatbot-dialog" v-if="isChatbotOpen">
+                  <div class="chatbot-dialog-header">
+                    <div class="chatbot-dialog-title" v-if="isEnglish">Emre's Assistant</div>
+                    <div class="chatbot-dialog-title" v-else>Emre'nin Asistanı</div>
+                    <div class="chatbot-close-button" @click="toggleChatbot">
+                      <img src="../src/assets/icons/x.svg" alt="close" class="chatbot-close-icon" />
+                    </div>
+                  </div>
+                  <div class="chatbot-message-area" ref="chatMessages">
+                    <div v-if="isEnglish" class="chatbot-welcome-message">
+                      Hi there! Ask me anything about Emre.
+                    </div>
+                    <div v-else class="chatbot-welcome-message">
+                      Merhaba! Emre ile ilgili her şeyi bana sorabilirsin.
+                    </div>
+                    <div
+                      v-for="(message, index) in messages"
+                      :key="index"
+                      :class="['message', message.sender]"
+                    >
+                      {{ message.text }}
+                    </div>
+                    <div v-if="isTyping" class="message bot typing">
+                      <div class="typing-indicator">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chatbot-input-area">
+                    <input
+                      type="text"
+                      v-model="userMessage"
+                      :placeholder="isEnglish ? 'Type your message...' : 'Mesajınızı yazın...'"
+                      @keyup.enter="sendMessage"
+                      class="chatbot-input-field"
+                    />
+                    <button @click="sendMessage" class="chatbot-send-button">
+                      <span v-if="isEnglish">Send</span>
+                      <span v-else>Gönder</span>
+                    </button>
+                  </div>
+                </div>
+              </transition>
             </div>
           </div>
           <div class="right-side" ref="rightSide">
@@ -329,11 +387,108 @@ export default {
   data() {
     return {
       isEnglish: true,
+      isRequestInProgress: false,
       data: data,
       rightSideScrollPosition: 0,
       theme: localStorage.getItem('theme') || 'light',
+      isChatbotOpen: false,
+      userMessage: '',
+      lastMessageTime: 0,
+      messageCooldown: 500,
+      messages: [],
+      isTyping: false,
+      apiKey: import.meta.env.VITE_GEMINI_API_KEY,
+      systemPrompt: `
+
+        You are a helpful assistant on Emre's personal website. Here is information about Emre:
+
+        Location: Based in Istanbul / Antalya, Turkey
+        Education:
+        - BSc in Computer Science Engineering, English medium, at Akdeniz University
+        - GPA 3.89 out of 4.00
+        - Expected to graduate among the top 3 in his class
+
+        Experience:
+        - Candidate Engineer at Turkish Aerospace Industries, 2024 to present
+        - Front End Developer Intern at GTS Global Travel Services, where he worked on the admin panel using Vue.js
+
+        Skills:
+        - Programming Languages: Java, Kotlin, JavaScript, TypeScript, Python, Assembly, C, C++
+        - Frameworks and Libraries: ReactJS, Vue.js, .NET, SpaCy, Pandas, NumPy, Scikit-Learn, NLTK, Transformers
+        - Databases and Tools: MySQL, SQL, Elasticsearch, Git
+        - Core Knowledge: Data Structures and Algorithms, Agile, Design Patterns, Test Driven Development, Virtualization
+        - Soft Skills: Leadership, Organization, Communication, Problem Solving, Analytical Thinking
+
+        Projects:
+        - AI Chess Bot where two bots simulate games by picking randomly among the top 3 best moves
+        - AI-Powered Trading Bot that uses machine learning to predict cryptocurrency prices and suggest trades
+        - Solstice Android app designed to help users manage education and health activities
+        - Fine-Tuning Gemma2 Model to improve Turkish text understanding and generation
+        - Assembly Projects involving low-level programming and system control logic
+
+        Activities and Volunteering:
+        - Student Representative in the Quality Control Committee at Akdeniz University
+        - Lecturer at the Turkish Education Volunteers Foundation
+        - Chair of the Blockchain Community in IEEE Akdeniz Student Branch
+        - Member of Google Developer Student Club Akdeniz
+        - Participant in Best Buddies social initiative
+
+        Achievements:
+        - Participant in Is Hayati 101 program hosted by ASELSAN
+        - Participant in Savunma Sanayi 101 and 401 programs hosted by the Ministry of Defence
+
+        Now Turkish:
+
+        Konum: İstanbul / Antalya, Türkiye
+        Eğitim:
+        - Bilgisayar Mühendisliği Lisans, Akdeniz Üniversitesi, İngilizce, 2022 – Devam Ediyor
+        - GANO: 3.89/4.0
+        - Sınıf: 3. Sınıf
+
+        Deneyim:
+        - Aday Mühendis, Türk Havacılık ve Uzay Sanayii, 2024 – Devam Ediyor
+        - Front End Developer Stajyeri, GTSFly, 2024 – Vue.js framework ile yönetici sayfası üzerinde çalıştı
+
+        Beceriler:
+        - Programlama Dilleri: Java, Kotlin, JavaScript, TypeScript, Python, Assembly, C, C++
+        - Kütüphaneler ve Çatılar: ReactJS, Vue.js, .NET, SpaCy, Pandas, NumPy, Scikit-Learn, NLTK, Transformers
+        - Veritabanları ve Araçlar: MySQL, SQL, Elasticsearch, Git
+        - Temel Bilgiler: Veri Yapıları ve Algoritmalar, Agile, Tasarım Desenleri, Test Tabanlı Geliştirme, Sanallaştırma
+        - Sosyal Beceriler: Liderlik, Organizasyon, İletişim, Problem Çözme, Analitik Düşünme
+
+        Projeler:
+        - AI Satranç Botu: İki botun kullanıcı tarafından belirlenen sayıda satranç oyunu oynayarak rastgele bir hamle seçtiği basit bir program
+        - AI Destekli Trading Bot: Kripto fiyat tahmini ve karlı işlemler için makine öğrenmesi kullanan bir bot
+        - Solstice: Kullanıcıların eğitim ve sağlık faaliyetlerini yönetmesine yardımcı olan Android uygulaması
+        - Gemma2 Modelinin İnce Ayarlanması: Türkçe metinlerin daha iyi anlaşılması ve üretilmesi için Gemma2 modelinin fine-tuning çalışması
+        - Assembly Projeleri: Düşük seviyede programlama ve sistem kontrolü içeren projeler
+
+        Sosyal Aktiviteler ve Gönüllülük:
+        - Öğrenci Temsilcisi, Kalite Kontrol Komitesi, Akdeniz Üniversitesi, 2025 – Devam Ediyor
+        - Eğitmen, Türkiye Eğitim Gönüllüleri Vakfı, 2025 – Devam Ediyor
+        - Başkan, Blockchain Komitesi, IEEE Akdeniz Öğrenci Kolu, 2023
+        - Katılımcı, Google Developer Student Club Akdeniz, 2022
+        - Katılımcı, Best Buddies, 2018 – 2021
+
+        Başarılar:
+        - İş Hayatı 101 Katılımcısı ASELSAN
+        - Savunma Sanayi 101 & 401 Katılımcısı Savunma Sanayii Başkanlığı
+
+        Beceriler:
+        - Programlama Dilleri: Java, Kotlin, JavaScript, TypeScript, Python, Assembly, C, C++, MySQL
+        - Kütüphaneler: SpaCy, Pandas, NumPy, Scikit-Learn, NLTK
+        - Çatılar: React.js, Vue.js, .NET
+        - Versiyon Kontrolü: Git
+        - Temel Konseptler: Veri Yapıları ve Algoritmalar
+        - Yazılım Pratikleri: Agile, Tasarım Desenleri, Test-Temelli Geliştirme, Sanallaştırma
+        - Sosyal Beceriler: Takım Liderliği, Organizasyon, Etkinlik Planlama, Liderlik, İletişim, Problem Çözme, Analitik Beceriler
+        - Diller: İngilizce C1
+
+        Keep responses brief, friendly, and informative. Only answer questions about Emre's professional background, skills, projects, education, and experience.
+`,
     }
   },
+
   methods: {
     changeLanguage(isEnglish) {
       this.$nextTick(() => {
@@ -341,6 +496,15 @@ export default {
           this.rightSideScrollPosition = this.$refs.rightSide.scrollTop
         }
         this.isEnglish = isEnglish
+        localStorage.setItem('language', isEnglish ? 'en' : 'tr')
+        this.systemPrompt = this.systemPrompt.replace(/Language instruction:.*/g, '')
+
+        if (!isEnglish) {
+          this.systemPrompt += '\nLanguage instruction: Please respond in Turkish.'
+        }
+
+        this.toggleChatbot()
+        this.messages = []
       })
     },
 
@@ -356,7 +520,165 @@ export default {
         appElement.classList.remove('theme-transition')
       }, 500)
     },
-    created() {},
+
+    toggleChatbot() {
+      this.isChatbotOpen = !this.isChatbotOpen
+
+      if (this.isChatbotOpen) {
+        this.$nextTick(() => {
+          this.scrollToBottom()
+        })
+      }
+    },
+
+    async sendMessage() {
+      if (this.isRequestInProgress) {
+        return
+      }
+
+      const currentTime = Date.now()
+      if (currentTime - this.lastMessageTime < this.messageCooldown) {
+        return
+      }
+
+      this.isRequestInProgress = true
+      this.messages.push({
+        text: this.userMessage,
+        sender: 'user',
+      })
+
+      this.$nextTick(() => {
+        this.scrollToBottom()
+      })
+
+      const userQuery = this.userMessage
+      this.userMessage = ''
+      this.isTyping = true
+
+      try {
+        const response = await this.callGeminiAPI(userQuery)
+
+        this.isTyping = false
+        this.messages.push({
+          text: response,
+          sender: 'bot',
+        })
+      } catch (error) {
+        this.isTyping = false
+        const fallbackMessage = this.isEnglish
+          ? 'Şu anda bağlantı sorunları yaşıyorum. Lütfen birazdan tekrar deneyin.'
+          : 'Bağlantı hatası. Lütfen daha sonra tekrar deneyin.'
+        this.messages.push({
+          text: fallbackMessage + error.message,
+          sender: 'bot',
+        })
+      }
+
+      this.isRequestInProgress = false
+      this.lastMessageTime = Date.now()
+
+      this.$nextTick(() => {
+        this.scrollToBottom()
+      })
+    },
+
+    sendDebouncedMessage() {
+      clearTimeout(this.typingTimeout)
+
+      this.typingTimeout = setTimeout(this.sendMessage, this.debounceDelay)
+    },
+
+    scrollToBottom() {
+      if (this.$refs.chatMessages) {
+        this.$refs.chatMessages.scrollTop = this.$refs.chatMessages.scrollHeight
+      }
+    },
+    async callGeminiAPI(userMessage) {
+      const formattedMessages = []
+
+      formattedMessages.push({
+        role: 'user',
+        parts: [{ text: this.systemPrompt }],
+      })
+
+      formattedMessages.push({
+        role: 'model',
+        parts: [
+          {
+            text: "I understand. I'll act as an assistant on Emre's website, providing brief and helpful information about his background, skills, projects, education, and experience.",
+          },
+        ],
+      })
+
+      let skipNext = false
+      for (let i = 0; i < this.messages.length; i++) {
+        if (skipNext) {
+          skipNext = false
+          continue
+        }
+
+        const message = this.messages[i]
+        const role = message.sender === 'user' ? 'user' : 'model'
+
+        formattedMessages.push({
+          role: role,
+          parts: [{ text: message.text }],
+        })
+      }
+
+      formattedMessages.push({
+        role: 'user',
+        parts: [{ text: userMessage }],
+      })
+
+      const response = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${this.apiKey}`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            contents: formattedMessages,
+            generationConfig: {
+              temperature: 0.7,
+              maxOutputTokens: 1000,
+              topP: 0.8,
+              topK: 40,
+            },
+          }),
+        },
+      )
+
+      if (!response.ok) {
+        throw new Error(`API response: ${response.status}`)
+      }
+
+      const data = await response.json()
+
+      if (
+        data.candidates &&
+        data.candidates.length > 0 &&
+        data.candidates[0].content &&
+        data.candidates[0].content.parts &&
+        data.candidates[0].content.parts.length > 0
+      ) {
+        return data.candidates[0].content.parts[0].text
+      } else {
+        throw new Error('Invalid response format from Gemini API')
+      }
+    },
+  },
+  beforeMount() {
+    const savedLanguage = localStorage.getItem('language')
+    if (savedLanguage) {
+      this.isEnglish = savedLanguage === 'en'
+    } else {
+      this.isEnglish = true
+    }
+    if (!this.isEnglish) {
+      this.systemPrompt += '\nLanguage instruction: Please respond in Turkish.'
+    }
   },
 }
 </script>
@@ -379,6 +701,18 @@ export default {
     opacity: 0;
   }
 
+  .slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+  }
+  .slide-fade-leave-active {
+    transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+  }
+  .slide-fade-enter-from,
+  .slide-fade-leave-to {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -387,6 +721,17 @@ export default {
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 
@@ -400,6 +745,16 @@ export default {
     }
     100% {
       opacity: 1;
+    }
+  }
+
+  @keyframes typing {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
     }
   }
 
@@ -491,139 +846,349 @@ export default {
       align-items: center;
 
       .left-side {
+        width: 25%;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        align-items: start;
-        padding: 0rem 2rem;
-        height: 100%;
-        animation: fadeIn 1s;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-background);
+        border-radius: 5px;
+        .chatbot-container {
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          margin-top: 1rem;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          animation: fadeIn 1s;
 
-        .image-wrapper {
-          width: 150px;
-          height: 150px;
-          border-radius: 50%;
-          border: 3px solid var(--color-border);
-          .image {
+          .chatbot-toggle {
+            background-color: var(--color-background-soft);
+            border-radius: 16px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s;
+            &:hover {
+              background-color: var(--color-background-mute);
+            }
+
+            .chatbot-label {
+              font-size: 1rem;
+              color: var(--color-heading);
+              font-weight: 500;
+            }
+          }
+
+          .chatbot-dialog {
+            position: absolute;
+            bottom: 120%;
+            left: 0;
             width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
+            height: 700px;
+            background-color: var(--color-background-soft);
+            border-radius: 10px;
+            z-index: 100;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            animation: slideInUp 0.3s;
+
+            .chatbot-dialog-header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 0.7rem 1rem;
+              background-color: var(--color-background-mute);
+              border-bottom: 1px solid var(--color-border);
+
+              .chatbot-dialog-title {
+                font-weight: 600;
+                color: var(--color-heading);
+              }
+
+              .chatbot-close-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                transition: background-color 0.2s;
+
+                &:hover {
+                  .chatbot-close-icon {
+                    filter: var(--image-invert);
+                  }
+                }
+
+                .chatbot-close-icon {
+                  width: 12px;
+                  height: 12px;
+                  filter: var(--image);
+                }
+              }
+            }
+
+            .chatbot-message-area {
+              flex-grow: 1;
+              padding: 1rem;
+              display: flex;
+              flex-direction: column;
+              gap: 0.8rem;
+              overflow: auto;
+              scrollbar-width: none;
+              -ms-overflow-style: none;
+
+              &::-webkit-scrollbar {
+                display: none;
+              }
+
+              .chatbot-welcome-message {
+                font-size: 1.5rem;
+                background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+                text-align: center;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                animation: fadeIn 0.5s;
+              }
+
+              .message {
+                max-width: 80%;
+                padding: 0.6rem;
+                border-radius: 15px;
+                font-size: 1rem;
+                word-break: break-word;
+                animation: fadeIn 0.3s;
+
+                &.user {
+                  align-self: flex-end;
+                  background-color: var(--color-background-mute);
+                  color: var(--color-heading);
+                  border-bottom-right-radius: 5px;
+                }
+
+                &.bot {
+                  align-self: flex-start;
+                  background-color: var(--color-border);
+                  color: var(--color-heading);
+                  border-bottom-left-radius: 5px;
+                }
+
+                &.typing {
+                  padding: 1rem;
+
+                  .typing-indicator {
+                    display: flex;
+                    gap: 0.5rem;
+
+                    span {
+                      display: inline-block;
+                      width: 6px;
+                      height: 6px;
+                      background-color: var(--color-heading);
+                      border-radius: 50%;
+                      opacity: 0.7;
+                      animation: typing 1.4s infinite;
+
+                      &:nth-child(2) {
+                        animation-delay: 0.2s;
+                      }
+
+                      &:nth-child(3) {
+                        animation-delay: 0.4s;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .chatbot-input-area {
+              display: flex;
+              padding: 0.7rem;
+              border-top: 1px solid var(--color-border);
+
+              .chatbot-input-field {
+                flex-grow: 1;
+                padding: 0.5rem;
+                border: 1px solid var(--color-border);
+                border-radius: 5px;
+                background-color: var(--color-background);
+                color: var(--color-text);
+                transition: border-color 0.3s;
+
+                &:focus {
+                  outline: none;
+                  border-color: var(--color-border-hover);
+                }
+              }
+
+              .chatbot-send-button {
+                margin-left: 0.5rem;
+                padding: 0.5rem 1rem;
+                background-color: var(--color-background-mute);
+                color: var(--color-text);
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition:
+                  background-color 0.3s,
+                  transform 0.2s;
+
+                &:hover {
+                  background-color: var(--color-border-hover);
+                }
+
+                &:active {
+                  transform: translateY(0);
+                }
+              }
+            }
           }
         }
-        .name {
-          margin-top: 1rem;
-          font-size: 2rem;
-          font-weight: bold;
-          color: var(--color-heading);
-        }
-        .occupation {
-          font-size: 1.2rem;
-        }
-        .location {
-          margin-top: 1rem;
-          font-size: 1rem;
-        }
-        .brief-text {
-          margin-top: 1rem;
-          font-size: 0.8rem;
-          text-align: start;
-          color: var(--color-text);
-        }
-        .work-together-text {
-          font-size: 1.5rem;
-          color: var(--color-text);
-          font-weight: bold;
-          margin-top: 1rem;
-        }
-        .lower-part {
+
+        .profile {
           display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 1rem;
-          width: 100%;
-          margin-top: 1.5rem;
-          .resume-link {
-            text-decoration: none;
-            .resume {
+          flex-direction: column;
+          align-items: start;
+          padding: 0rem 2rem;
+          height: 90%;
+          animation: fadeIn 1s;
+
+          .image-wrapper {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--color-border);
+            .image {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+          .name {
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--color-heading);
+          }
+          .occupation {
+            font-size: 1.2rem;
+          }
+          .location {
+            margin-top: 1rem;
+            font-size: 1rem;
+          }
+          .brief-text {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            text-align: start;
+            color: var(--color-text);
+          }
+          .work-together-text {
+            font-size: 1.5rem;
+            color: var(--color-text);
+            font-weight: bold;
+            margin-top: 1rem;
+          }
+          .lower-part {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1rem;
+            width: 100%;
+            margin-top: 1.5rem;
+            .resume-link {
+              text-decoration: none;
+              .resume {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 10%;
+                color: var(--color-text);
+                font-size: 100%;
+                padding: 0.2rem 0.4rem;
+                border: 1px solid var(--color-border);
+                border-radius: 5px;
+                background-color: transparent;
+                transition:
+                  background-color 0.3s,
+                  border-color 0.3s,
+                  filter 0.3s;
+
+                .folder-image {
+                  width: 20%;
+                  height: 20%;
+                  filter: var(--image);
+                }
+
+                &:hover {
+                  background-color: var(--color-background-invert);
+                  color: var(--color-text-invert);
+                  cursor: pointer;
+                  .folder-image {
+                    filter: var(--image-invert);
+                  }
+                }
+                .resume-text {
+                  display: flex;
+                  text-align: center;
+                  font-size: 1rem;
+                }
+              }
+            }
+            .links {
               display: flex;
               flex-direction: row;
               align-items: center;
-              justify-content: center;
-              gap: 10%;
-              color: var(--color-text);
-              font-size: 100%;
-              padding: 0.2rem 0.4rem;
-              border: 1px solid var(--color-border);
-              border-radius: 5px;
-              background-color: transparent;
-              transition:
-                background-color 0.3s,
-                border-color 0.3s,
-                filter 0.3s;
-
-              .folder-image {
-                width: 20%;
-                height: 20%;
-                filter: var(--image);
+              justify-content: space-evenly;
+              .link {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-right: 1rem;
+                .icon {
+                  width: 25px;
+                  height: 25px;
+                  filter: var(--image);
+                  &:hover {
+                    filter: var(--image-invert);
+                    cursor: pointer;
+                  }
+                }
               }
+            }
+          }
+          .work-together-section {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
 
+            .work-together-button {
+              margin-top: 1rem;
+              padding: 0.5rem 2rem;
+              border: 1px solid var(--color-background);
+              border-radius: 5px;
+              color: var(--color-text);
+              font-size: 1rem;
+              transition: all 0.3s;
               &:hover {
                 background-color: var(--color-background-invert);
                 color: var(--color-text-invert);
                 cursor: pointer;
-                .folder-image {
-                  filter: var(--image-invert);
-                }
               }
-              .resume-text {
-                display: flex;
-                text-align: center;
-                font-size: 1rem;
-              }
-            }
-          }
-          .links {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            .link {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: center;
-              margin-right: 1rem;
-              .icon {
-                width: 25px;
-                height: 25px;
-                filter: var(--image);
-                &:hover {
-                  filter: var(--image-invert);
-                  cursor: pointer;
-                }
-              }
-            }
-          }
-        }
-        .work-together-section {
-          display: flex;
-          flex-direction: column;
-          align-items: start;
-          justify-content: start;
-
-          .work-together-button {
-            margin-top: 1rem;
-            padding: 0.5rem 2rem;
-            border: 1px solid var(--color-background);
-            border-radius: 5px;
-            color: var(--color-text);
-            font-size: 1rem;
-            transition: all 0.3s;
-            &:hover {
-              background-color: var(--color-background-invert);
-              color: var(--color-text-invert);
-              cursor: pointer;
             }
           }
         }
@@ -808,8 +1373,28 @@ export default {
         box-sizing: border-box;
         .left-side {
           width: 100%;
-          padding: 1rem;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--color-background);
+          border-radius: 5px;
+          .chatbot-container {
+            width: 100%;
+            max-width: none;
+
+            .chatbot-dialog {
+              width: 100%;
+              height: 300px;
+              bottom: 120%;
+            }
+          }
+          .profile {
+            width: 100%;
+            padding: 1rem;
+          }
         }
+
         .right-side {
           width: 100%;
           padding: 1rem;
@@ -914,8 +1499,29 @@ export default {
         box-sizing: border-box;
         .left-side {
           width: 100%;
-          padding: 1rem;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--color-background);
+          border-radius: 5px;
+          .chatbot-container {
+            width: 100%;
+            max-width: none;
+
+            .chatbot-dialog {
+              width: 100%;
+              height: 300px;
+              bottom: 110%;
+              left: 0;
+            }
+          }
+          .profile {
+            width: 100%;
+            padding: 1rem;
+          }
         }
+
         .right-side {
           width: 100%;
           padding: 1rem;
@@ -1012,51 +1618,61 @@ export default {
     .scroll-wrapper {
       width: 100%;
       height: 100%;
-      .left-side {
-        padding: 0rem 3rem;
-        width: 100%;
 
-        .image {
-          width: 50%;
-          height: auto;
-        }
-        .name {
-          margin-top: 0.6rem;
-          font-size: 1.5rem;
-        }
-        .occupation {
-          font-size: 1rem;
-        }
-        .location {
-          margin-top: 0.3rem;
-          font-size: 1rem;
-        }
-        .brief-text {
-          margin-top: 0.6rem;
-          font-size: 0.8rem;
-        }
-        .work-together-section {
-          margin-top: 0.8rem;
-          .work-together-text {
+      .left-side {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-background);
+        border-radius: 5px;
+        .profile {
+          padding: 0rem 3rem;
+          width: 100%;
+
+          .image {
+            width: 50%;
+            height: auto;
+          }
+          .name {
+            margin-top: 0.6rem;
+            font-size: 1.5rem;
+          }
+          .occupation {
             font-size: 1rem;
           }
-          .work-together-button {
+          .location {
+            margin-top: 0.3rem;
+            font-size: 1rem;
+          }
+          .brief-text {
+            margin-top: 0.6rem;
             font-size: 0.8rem;
           }
-        }
-        .lower-part {
-          margin-top: 0.8rem;
-          .resume {
-            padding: 0;
-            .resume-link {
+          .work-together-section {
+            margin-top: 0.8rem;
+            .work-together-text {
               font-size: 1rem;
             }
+            .work-together-button {
+              font-size: 0.8rem;
+            }
           }
-          .links {
-            .link {
-              .icon {
-                width: 25px;
-                height: 25px;
+          .lower-part {
+            margin-top: 0.8rem;
+            .resume {
+              padding: 0;
+              .resume-link {
+                font-size: 1rem;
+              }
+            }
+            .links {
+              .link {
+                .icon {
+                  width: 25px;
+                  height: 25px;
+                }
               }
             }
           }
