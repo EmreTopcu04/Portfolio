@@ -3,20 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Emre Topcu | Software Engineer</title>
     <meta
       name="description"
-      content="Emre Topcu's personal portfolio showcasing his skills, experience, projects, and more."
+      content="Explore Emre Topcu's portfolio featuring software engineering projects, AI innovations, and Vue.js applications."
     />
     <meta name="author" content="Emre Topcu" />
-
     <meta
       name="keywords"
-      content="Emre Topcu, Portfolio, Computer Science, Developer, Vue.js, Software Engineer, AI, Machine Learning"
+      content="Emre Topcu, Portfolio, Software Engineer, AI Developer, Vue.js, Machine Learning, Web Developer, Computer Science"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="Emre.png" />
-    <title>Emre Topcu</title>
+    <link rel="canonical" href="https://www.emretopcu.com/" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/Emre.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta property="og:title" content="Emre Topcu | Software Engineer Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore my projects in AI, Vue.js, and more. Let's build something great together!"
+    />
+    <meta property="og:image" content="https://www.emretopcu.com/Emre.png" />
+    <meta property="og:url" content="https://www.emretopcu.com" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Emre Topcu | Software Engineer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="AI, Vue.js, and software engineering projects by Emre Topcu."
+    />
+    <meta name="twitter:image" content="https://www.emretopcu.com/Emre.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Emre Topcu",
+        "url": "https://www.emretopcu.com.com",
+        "sameAs": ["https://github.com/EmreTopcu04", "https://www.linkedin.com/in/emre-topcu04/"],
+        "jobTitle": "Software Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance"
+        }
+      }
+    </script>
+
     <style>
       body {
         display: none;
@@ -28,7 +65,15 @@
       applyTheme()
       applyLanguage()
     </script>
+
+    <script type="module">
+      import { applyTheme } from './src/utils/applyTheme.js'
+      import { applyLanguage } from './src/utils/applyLanguage.js'
+      applyTheme()
+      applyLanguage()
+    </script>
   </head>
+
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>

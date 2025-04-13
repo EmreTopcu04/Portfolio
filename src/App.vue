@@ -865,20 +865,34 @@ export default {
           animation: fadeIn 1s;
 
           .chatbot-toggle {
-            background-color: var(--color-background-soft);
-            border-radius: 16px;
-            padding: 0.5rem 1rem;
+            background: linear-gradient(
+              90deg,
+              var(--color-background-soft) 0%,
+              var(--color-background-mute) 100%
+            );
+            border-radius: 20px;
+            padding: 0.8rem;
             cursor: pointer;
             text-align: center;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
+            border: 1px solid var(--color-border);
+
             &:hover {
-              background-color: var(--color-background-mute);
+              opacity: 0.8;
+            }
+
+            &:active {
+              transform: translateY(0);
             }
 
             .chatbot-label {
               font-size: 1rem;
               color: var(--color-heading);
-              font-weight: 500;
+              font-weight: 600;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 8px;
             }
           }
 
