@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Emre Topcu | Software Engineer</title>
+
     <meta
       name="description"
       content="Explore Emre Topcu's portfolio featuring software engineering projects, AI innovations, and Vue.js applications."
     />
+    <meta
+      name="description"
+      lang="tr"
+      content="Emre Topcu'nun yazılım mühendisliği projeleri, yapay zeka yenilikleri ve Vue.js uygulamalarını içeren portfolyosunu keşfedin."
+    />
+
     <meta name="author" content="Emre Topcu" />
     <meta
       name="keywords"
-      content="Emre Topcu, Portfolio, Software Engineer, AI Developer, Vue.js, Machine Learning, Web Developer, Computer Science"
+      content="Emre Topcu, Portfolio, Software Engineer, AI Developer, Vue.js, Machine Learning, Web Developer, Computer Science, Yazılım Mühendisi, Yapay Zeka, Bilgisayar Mühendisliği"
     />
 
     <link rel="canonical" href="https://www.emretopcu.com/" />
+    <meta name="content-language" content="en, tr" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="/Emre.png" />
 
@@ -25,11 +33,13 @@
     <meta property="og:title" content="Emre Topcu | Software Engineer Portfolio" />
     <meta
       property="og:description"
-      content="Explore my projects in AI, Vue.js, and more. Let's build something great together!"
+      content="Explore my projects in AI, Vue.js, and software engineering solutions. Let's build something great together!"
     />
     <meta property="og:image" content="https://www.emretopcu.com/Emre.png" />
     <meta property="og:url" content="https://www.emretopcu.com" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="tr_TR" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Emre Topcu | Software Engineer Portfolio" />
@@ -44,12 +54,39 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Emre Topcu",
-        "url": "https://www.emretopcu.com.com",
+        "url": "https://www.emretopcu.com",
         "sameAs": ["https://github.com/EmreTopcu04", "https://www.linkedin.com/in/emre-topcu04/"],
         "jobTitle": "Software Engineer",
+        "description": {
+          "@language": "en",
+          "@value": "Software Engineer specializing in AI and Vue.js applications"
+        },
+        "alternateName": [
+          {
+            "@language": "tr",
+            "@value": "Yazılım Mühendisi"
+          }
+        ],
         "worksFor": {
           "@type": "Organization",
           "name": "Freelance"
+        },
+        "knowsLanguage": ["en", "tr"]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://www.emretopcu.com",
+        "name": "Emre Topcu Portfolio",
+        "description": "Portfolio showcasing software engineering projects",
+        "inLanguage": ["en", "tr"],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.emretopcu.com/?search={search_term_string}",
+          "query-input": "required name=search_term_string"
         }
       }
     </script>
@@ -59,16 +96,11 @@
         display: none;
       }
     </style>
-    <script type="module">
-      import { applyTheme } from './src/utils/applyTheme.js'
-      import { applyLanguage } from './src/utils/applyLanguage.js'
-      applyTheme()
-      applyLanguage()
-    </script>
 
     <script type="module">
       import { applyTheme } from './src/utils/applyTheme.js'
       import { applyLanguage } from './src/utils/applyLanguage.js'
+
       applyTheme()
       applyLanguage()
     </script>
@@ -76,6 +108,27 @@
 
   <body>
     <div id="app"></div>
+
+    <noscript>
+      <div style="padding: 20px; max-width: 800px; margin: 0 auto">
+        <div lang="en">
+          <h1>Emre Topcu | Software Engineer</h1>
+          <p>
+            Welcome to my portfolio showcasing my work in software engineering, AI development, and
+            Vue.js applications.
+          </p>
+        </div>
+
+        <div lang="tr">
+          <h1>Emre Topcu | Yazılım Mühendisi</h1>
+          <p>
+            Yazılım mühendisliği, yapay zeka geliştirme ve Vue.js uygulamalarındaki çalışmalarımı
+            sergileyen portfolyoma hoş geldiniz.
+          </p>
+        </div>
+      </div>
+    </noscript>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
